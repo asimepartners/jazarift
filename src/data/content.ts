@@ -195,26 +195,26 @@ export const fourCs: FrameworkPillar[] = [
 
 export const threeTs: FrameworkDetail[] = [
   {
-    code: "3T / 01",
+    code: "First T",
     title: "Team",
     description:
       "We back resilient, impactful, market-driven founders. A great part of our investment conviction comes from the team's ability to execute. We look for complementary skills, relevant domain expertise, and coachability.",
   },
   {
-    code: "3T / 02",
+    code: "Second T",
     title: "Taste",
     description:
       "We look for innovations that address real, pressing healthcare needs — with a particular focus on digital health, medtech, biotech, and assistive technologies. We prioritize solutions with strong potential for Pan-African scalability.",
   },
   {
-    code: "3T / 03",
+    code: "Third T",
     title: "Terms",
     description:
       "With our investment, ESG, legal, and tax partners, we ensure investment terms are reasonable, equitable, transparent, and fair. Our advisory team supports both sides of the transaction to align incentives for long-term success.",
   },
 ];
 
-/* ── Due Diligence ───────────────────────────────────────── */
+/* ── Transaction Advisory ───────────────────────────────────────── */
 
 export const diligenceCards = [
   {
@@ -231,7 +231,7 @@ export const diligenceCards = [
   },
 ];
 
-/* ── Francophone Africa ──────────────────────────────────── */
+/* ── Innovation Lab ──────────────────────────────────── */
 
 export const francoSection = {
   stat: "300M",
