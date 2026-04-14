@@ -70,7 +70,7 @@ export const thesisIntro = {
   headline: "A Conveyor Belt from Idea to Impact",
   body: [
     "Africa's youthful population  median age 18 holds immense potential to design new healthcare solutions. Yet startups consistently fall through the gap between early incubation and later-stage funding. Jaza Rift fills that gap.",
-    "In partnership with Villgro Africa, we have built a seamless pipeline: from grants and incubation, through our pre-Seed to Series A bridge, to larger institutional rounds. No other platform in Africa offers this end-to-end continuity for healthcare deep tech.",
+    "In partnership with incubators and accelerators, we have built a seamless pipeline: from grants and incubation, through our pre-Seed to Series A bridge, to larger institutional rounds. No other platform in Africa offers this end-to-end continuity for healthcare deep tech.",
   ],
 };
 
@@ -115,8 +115,8 @@ export const conveyorSteps: ConveyorStep[] = [
     num: "02",
     title: "Incubation & Acceleration",
     description:
-      "Villgro Africa's deep incubation support, grants, and network to build investment readiness.",
-    tag: "Villgro Africa Partner",
+      "Strategic partners across Africa provide deep incubation support, grants, and network to build investment readiness.",
+    tag: "Incubation and Acceleration Partners",
   },
   {
     num: "03",
@@ -262,7 +262,7 @@ export const insights: InsightCard[] = [
     title:
       "Filling the Gap: The Conveyor Belt of Innovation in African Healthcare",
     description:
-      "How a strategic partnership between Villgro Africa and Jaza Rift Ventures is creating a seamless pipeline from invention to investment addressing the critical funding gap in Africa's deep health tech sector.",
+      "How a strategic partnership between leading incubators and Jaza Rift Ventures is creating a seamless pipeline from invention to investment addressing the critical funding gap in Africa's deep health tech sector.",
     featured: true,
   },
   {
@@ -296,8 +296,8 @@ export const offices: Office[] = [
   {
     city: "Kenya Office",
     lines: [
-      "Villgro Africa, Bishop Magua Building",
-      "Off George Padmore Street, Nairobi",
+      "Escada Apartments, Raphta Road",
+      "Westlands, Nairobi, Kenya",
     ],
   },
   {
