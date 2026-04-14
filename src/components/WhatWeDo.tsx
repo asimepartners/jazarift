@@ -7,7 +7,7 @@ const pillars = [
     number: '01',
     label: 'Ventures',
     title: 'Jaza Rift Ventures',
-    body: 'A VC and asset management advisory company solely focused on healthcare in Africa. Set up in partnership with Villgro Africa, we propel startups from pre-Seed to Series A with targeted capital and hands-on support in digital health, medtech, and biotech.',
+    body: 'A VC and asset management advisory company solely focused on healthcare in Africa. We propel startups from pre-Seed to Series A with targeted capital and hands-on support in digital health, medtech, and biotech.',
     icon: ChartIncreaseIcon,
     href: '#portfolio',
   },
