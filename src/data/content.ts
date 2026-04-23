@@ -49,9 +49,9 @@ export interface Office {
 /* ── Hero ────────────────────────────────────────────────── */
 
 export const heroContent = {
-  headline: "Healthcare venture capital for Africa.",
+  headline: "Healthcare investment platform for Africa.",
   subheadline:
-    "Pre-Seed to Series\u00A0A funding, expert advisory, and hands-on support for founders building the future of healthcare across the continent.",
+    "Pre-Seed to Series\u00A0A, debt and grant funding, transaction advisory, and strategic market entry to build the future of healthcare in Afrca.",
   ctaPrimary: { label: "Submit Your Proposal", href: "#apply" },
   ctaSecondary: { label: "View Portfolio", href: "#portfolio" },
 };
@@ -67,31 +67,31 @@ export const heroStats = [
 
 export const thesisIntro = {
   eyebrow: "Investment Thesis",
-  headline: "A Conveyor Belt from Idea to Impact",
+  headline: "An integrated investment platform for Healthcare in Africa: from Idea to Scale and Impact",
   body: [
-    "Africa's youthful population  median age 18 holds immense potential to design new healthcare solutions. Yet startups consistently fall through the gap between early incubation and later-stage funding. Jaza Rift fills that gap.",
-    "In partnership with incubators and accelerators, we have built a seamless pipeline: from grants and incubation, through our pre-Seed to Series A bridge, to larger institutional rounds. No other platform in Africa offers this end-to-end continuity for healthcare deep tech.",
+    "Africa's youthful population  median age 18 holds immense potential to design new healthcare solutions fit for the market. Yet startups consistently fall through the gap between early incubation and later-stage funding. In parallel, healthcare SMEs face working capital and growth equity shortages to scale and grow their businesses. Jaza Rift fills those gaps.",
+    "In partnership with leading thought stakeholders, we've built a seamless pipeline: from research to commercialisation, idea to market, and scale in multiple countries, no other organisation in Africa offers this end-to-end continuity for healthcare investments as a platform to scale across Africa.",
   ],
 };
 
 export const thesisAreas: ThesisArea[] = [
   {
     icon: "🤖",
-    title: "AI / ML for Health",
+    title: "Digitial Health",
     description:
-      "Project Maelezo — engaging global health actors at the intersection of AI and African healthcare outcomes.",
+      "Software developed to solve a healthcare challenge. Convergence of health and tech to improve delivery and outcomes. Essentially Digital solutions (not hardware or physical assets).",
   },
   {
     icon: "🌿",
-    title: "Climate-Resilient Healthcare",
+    title: "Medtech",
     description:
-      "Africa is disproportionately affected by climate change. We invest at the nexus of climate and health.",
+      "Medical technologies are products or solutions (ideally with services) used to save and improve people’s lives, by preventing, diagnosing, monitoring, treating and caring for diseases (- at every phase of the patient pathway).",
   },
   {
     icon: "♀",
-    title: "Gender & Health",
+    title: "Biotech / Techbio",
     description:
-      "Women's health, maternal outcomes, and gender-equitable innovations with lasting social impact.",
+      "Technology based on biology, involving harnessing cellular and biomolecular processes to develop technologies and products that help improve people's health and lives. It provides breakthrough products and technologies to combat debilitating and rare diseases, reduce our environmental footprint, feed the hungry, use less and cleaner energy, and have safer, cleaner and more efficient industrial manufacturing processes.",
   },
   {
     icon: "♿",
@@ -101,7 +101,7 @@ export const thesisAreas: ThesisArea[] = [
   },
 ];
 
-/* ── Conveyor Belt ───────────────────────────────────────── */
+/* ── Healthcare Platform ───────────────────────────────────────── */
 
 export const conveyorSteps: ConveyorStep[] = [
   {
@@ -120,7 +120,7 @@ export const conveyorSteps: ConveyorStep[] = [
   },
   {
     num: "03",
-    title: "Pre-Seed → Series A",
+    title: "Pre-Seed → Series B",
     description:
       "Jaza Rift bridges the critical funding gap with equity capital, our 4Cs methodology, and co-investor access.",
     tag: "Jaza Rift Ventures",
@@ -136,7 +136,7 @@ export const conveyorSteps: ConveyorStep[] = [
     num: "05",
     title: "Scale & Impact",
     description:
-      "Series B+ and Pan-African expansion with dedicated advisory support from Jaza Rift Advisory.",
+      "Series B+, SMEs scale up (debt) for Pan-African expansion with dedicated advisory support from Jaza Rift Advisory.",
     tag: "10x Growth",
   },
 ];
@@ -146,37 +146,37 @@ export const conveyorSteps: ConveyorStep[] = [
 export const portfolio: PortfolioCompany[] = [
   {
     category: "Insuretech",
-    name: "Digital Claims Platform",
+    name: "Tanel",
     description:
       "B2B insuretech platform for companies and their employees with a digital claim management tool for healthcare providers.",
   },
   {
     category: "Diagnostics",
-    name: "Cloud Pathology Lab",
+    name: "Revna Biosciences",
     description:
       "B2B cloud-based remote diagnosis, reporting, and lab information system for pathologists across Africa.",
   },
   {
     category: "Cold Chain",
-    name: "IoT Cold Storage",
+    name: "Figorr",
     description:
       "B2B IoT-powered cold storage, monitoring, and last-mile delivery solution for healthcare and agriculture perishables.",
   },
   {
     category: "Health IT",
-    name: "EHR & Clinical Decision",
+    name: "Plural Health",
     description:
       "B2B EHR and medical practice automation platform with clinical decision support and patient connect channels to hospitals.",
   },
   {
     category: "AI / Voice",
-    name: "Speech-to-Text EMR",
+    name: "Intron",
     description:
       "Speech-driven EMR system reducing first-level diagnostics effort and improving patient information documentation.",
   },
   {
     category: "Telemedicine",
-    name: "South African TeleMed",
+    name: "Kena",
     description:
       "B2C and B2B2C platform connecting patients to doctors, nurses, and mental health professionals in Southern Africa.",
   },
@@ -225,9 +225,9 @@ export const diligenceCards = [
   },
   {
     label: "Data-Driven",
-    title: "Machine Learning & Impact Measurement",
+    title: "AI for Impact Measurement",
     description:
-      "Decisions grounded in data science and ML to prioritize innovations addressing real-world challenges. We also provide impact management and measurement services aligned with UN SDGs, GIIN, and IRIS+ standards.",
+      "Decisions grounded in data science and AI to prioritize innovations addressing real-world challenges. We also provide impact management and measurement services aligned with UN SDGs, GIIN, and IRIS+ standards.",
   },
 ];
 
@@ -285,9 +285,9 @@ export const insights: InsightCard[] = [
 
 export const applyCta = {
   headline: "Apply for a Long-Term Strategic Partnership",
-  body: "If you are building a disruptive healthcare innovation in Africa digital health, medtech, biotech, or assistive technology  we want to hear from you.",
+  body: "If you are building a needed healthcare innovation in Africa digital health, medtech, biotech, or assistive technology, or looking for scale-up debt capital, we want to hear from you.",
   buttonLabel: "Submit Your Proposal",
-  buttonHref: "mailto:info@jazarift.com",
+  buttonHref: "http://tinyurl.com/jazarift",
 };
 
 /* ── Footer ──────────────────────────────────────────────── */
@@ -314,7 +314,7 @@ export const footerNav = {
   network: [
     "Strategic Healthcare Board",
     "Founder Advisory Network",
-    "Healthcare Collaborative",
+    "Healthcare Collaborative Network",
   ],
   company: ["About", "Team", "Insights", "Enabling Themes", "Apply", "Contact"],
 };
