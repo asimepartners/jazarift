@@ -49,7 +49,7 @@ export interface Office {
 /* ── Hero ────────────────────────────────────────────────── */
 
 export const heroContent = {
-  headline: "Healthcare investment platform for Africa.",
+  headline: "Healthcare investment platform for Africa",
   subheadline:
     "Pre-Seed to Series\u00A0A, debt and grant funding, transaction advisory, and strategic market entry to build the future of healthcare in Afrca.",
   ctaPrimary: { label: "Submit Your Proposal", href: "#apply" },
