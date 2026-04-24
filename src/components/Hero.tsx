@@ -35,14 +35,14 @@ export default function Hero() {
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
             >
               <span className="wf-hero-badge-dot" />
-              Healthcare · Investment Platfrom · Africa
+              Healthcare · Investment Platform · Africa
             </motion.div>
           </BlurIn>
 
           <FadeUp>
             <h1 className="wf-hero-h1">
               Healthcare Investment <br />
-              Platform for <span className="wf-hero-accent">Africa</span>
+              Platform for <span className="wf-hero-accent">Africa.</span>
             </h1>
           </FadeUp>
 
