@@ -16,7 +16,7 @@ export default function Footer() {
                 <p className="wf-ft-eyebrow">Ready to build?</p>
                 <h2 className="wf-ft-headline">
                   Let's back Africa's<br />
-                  <span className="wf-ft-headline-accent">next breakthrough.</span>
+                  <span className="wf-ft-headline-accent">Next Breakthrough.</span>
                 </h2>
               </div>
               <motion.a
