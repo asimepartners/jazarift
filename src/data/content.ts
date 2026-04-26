@@ -145,40 +145,58 @@ export const conveyorSteps: ConveyorStep[] = [
 
 export const portfolio: PortfolioCompany[] = [
   {
-    category: "Insuretech",
+    category: "Digital Health",
     name: "Tanel",
     description:
       "B2B insuretech platform for companies and their employees with a digital claim management tool for healthcare providers.",
   },
   {
-    category: "Diagnostics",
+    category: "Biotech",
     name: "Revna Biosciences",
     description:
-      "B2B cloud-based remote diagnosis, reporting, and lab information system for pathologists across Africa.",
+      "B2B precision medicine through state-of-the-art biomedical facilities integrating biomedical research insights with clinical and diagnostics services.",
   },
   {
-    category: "Cold Chain",
+    category: "Medtech",
     name: "Figorr",
     description:
       "B2B IoT-powered cold storage, monitoring, and last-mile delivery solution for healthcare and agriculture perishables.",
   },
   {
-    category: "Health IT",
+    category: "Digital Health",
     name: "Plural Health",
     description:
       "B2B EHR and medical practice automation platform with clinical decision support and patient connect channels to hospitals.",
   },
   {
-    category: "AI / Voice",
+    category: "Digital Health",
     name: "Intron",
     description:
-      "Speech-driven EMR system reducing first-level diagnostics effort and improving patient information documentation.",
+      "Voice AI speech-driven EMR system reducing first-level diagnostics effort and improving patient information documentation.",
   },
   {
-    category: "Telemedicine",
+    category: "Digital Health",
     name: "Kena",
     description:
-      "B2C and B2B2C platform connecting patients to doctors, nurses, and mental health professionals in Southern Africa.",
+      "B2C and B2B2C Telemedicine platform connecting patients to doctors, nurses, and mental health professionals in Southern Africa.",
+  },
+    {
+    category: "Digital Health",
+    name: "Yene Health",
+    description:
+      "B2C/B2B Femtech startup leveraging technology in establishing a health ecosystem for women; from period & pregnancy tracking to e-pharmacy and telehealth tailored for women’s needs.",
+  },
+  {
+    category: "Digital Health",
+    name: "TPN",
+    description:
+      "B2B cloud-based remote diagnosis, reporting and lab information system for pathologists.",
+  },
+  {
+    category: "Medtech>",
+    name: "Neopenda",
+    description:
+      "B2B affordable hardware and software neonatal and adult vitals monitoring solution.",
   },
 ];
 
@@ -195,19 +213,19 @@ export const fourCs: FrameworkPillar[] = [
 
 export const threeTs: FrameworkDetail[] = [
   {
-    code: "First T",
+    code: "Team-Product Fit",
     title: "Team",
     description:
       "We back resilient, impactful, market-driven founders. A great part of our investment conviction comes from the team's ability to execute. We look for complementary skills, relevant domain expertise, and coachability.",
   },
   {
-    code: "Second T",
+    code: "Product-Market and Team-Market Fit",
     title: "Taste",
     description:
       "We look for innovations that address real, pressing healthcare needs — with a particular focus on digital health, medtech, biotech, and assistive technologies. We prioritize solutions with strong potential for Pan-African scalability.",
   },
   {
-    code: "Third T",
+    code: "Fund Thesis Fit",
     title: "Terms",
     description:
       "With our investment, ESG, legal, and tax partners, we ensure investment terms are reasonable, equitable, transparent, and fair. Our advisory team supports both sides of the transaction to align incentives for long-term success.",
@@ -218,23 +236,35 @@ export const threeTs: FrameworkDetail[] = [
 
 export const diligenceCards = [
   {
-    label: "Due Diligence",
-    title: "Comprehensive Diligence",
+    label: "Transaction Advisory Solutions",
+    title: "Due Diligence",
     description:
       "Risk assessment and mitigation, market analysis, legal and regulatory checks all contextualized for the unique challenges of African markets. Our Investment Committee advises on technology fit, business model, and thesis alignment.",
   },
   {
-    label: "Data-Driven",
-    title: "AI for Impact Measurement",
+    label: "Value over Price",
+    title: "Financial Modelling & Independent Valuation",
     description:
-      "Decisions grounded in data science and AI to prioritize innovations addressing real-world challenges. We also provide impact management and measurement services aligned with UN SDGs, GIIN, and IRIS+ standards.",
+      "Financial Modelling and Valuation: investment decisions grounded in local data content, expertise and AI.",
+  },
+  {
+    label: "Impact Measurement",
+    title: "Depth, Breadth and Scale of Impact",
+    description:
+      "We also provide impact management and measurement services aligned with UN SDGs, GIIN, and IRIS+ standards.",
+  },
+  {
+    label: "Market Entry",
+    title: "Where and How to Scale in Africa",
+    description:
+      "With our extensive networks across Africa, we advise both local and international healthcare companies on how to navigate regulatory challenges and grow across key healthcare markets in Africa.",
   },
 ];
 
 /* ── Innovation Lab ──────────────────────────────────── */
 
 export const francoSection = {
-  stat: "300M",
+  stat: "300M+",
   statLabel: "French Speakers in Africa",
   headline: "Unlocking Francophone Africa",
   body: [
@@ -245,11 +275,8 @@ export const francoSection = {
     "Senegal",
     "Côte d'Ivoire",
     "DRC",
-    "Cameroon",
-    "Benin",
-    "Togo",
     "Madagascar",
-    "+ 14 More",
+    "+ 17 More",
   ],
 };
 
@@ -285,7 +312,7 @@ export const insights: InsightCard[] = [
 
 export const applyCta = {
   headline: "Apply for a Long-Term Strategic Partnership",
-  body: "If you are building a needed healthcare innovation in Africa digital health, medtech, biotech, or assistive technology, or looking for scale-up debt capital, we want to hear from you.",
+  body: "If you are building or growing a healthcare innovation in Africa across digital health, medtech, biotech, or assistive technology; or looking for scale-up debt capital, we want to hear from you.",
   buttonLabel: "Submit Your Proposal",
   buttonHref: "http://tinyurl.com/jazarift",
 };
