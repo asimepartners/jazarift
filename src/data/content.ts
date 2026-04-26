@@ -53,14 +53,14 @@ export const heroContent = {
   subheadline:
     "Pre-Seed to Series\u00A0A investments; Working Capital Debt ; Grant funding. We also provide transaction advisory, strategic market entry and Global health partnerships to build the future of healthcare in Africa.",
   ctaPrimary: { label: "Submit Your Proposal", href: "http://tinyurl.com/jazarift", target: "_blank" },
-  ctaSecondary: { label: "View Portfolio", href: "#portfolio" },
+  ctaSecondary: { label: "Portfolio", href: "#portfolio" },
 };
 
 export const heroStats = [
   { value: "9", label: "Portfolio Companies" },
-  { value: "4", label: "Sectors: Digital Health, Medtech, Biotech, Assistive Tech" },
+  { value: "4", label: "Sectors" },
   { value: "2", label: "Offices" },
-  { value: "3", label: "Nexus: Climate, AI, Gender" },
+  { value: "3", label: "Health Nexus" },
 ];
 
 /* ── Investment Thesis ───────────────────────────────────── */

@@ -20,7 +20,7 @@ export default function Footer() {
                 </h2>
               </div>
               <motion.a
-                href="mailto:connect@jazarift.com"
+                href="mailto:connect@jazarift.vc"
                 className="wf-ft-cta-btn"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.97 }}
@@ -44,7 +44,7 @@ export default function Footer() {
                   <img src="/jaza-rift-blue.png" alt="Jaza Rift Ventures" className="wf-ft-logo" />
                 </a>
                 <p className="wf-ft-desc">
-                  A healthcare-focused venture capital firm backing early-stage companies across Africa.
+                  An investment holding, transaction advisory and innovation lab for healthcare in Africa.
                 </p>
                 <div className="wf-ft-socials">
                   <a href="https://linkedin.com/company/jazarift" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="wf-ft-social">
@@ -82,7 +82,7 @@ export default function Footer() {
               {/* Contact col */}
               <div className="wf-ft-col">
                 <p className="wf-ft-col-label">Contact</p>
-                <a href="mailto:connect@jazarift.com" className="wf-ft-contact-link">connect@jazarift.com</a>
+                <a href="mailto:connect@jazarift.vc" className="wf-ft-contact-link">connect@jazarift.vc</a>
               </div>
 
             </div>
