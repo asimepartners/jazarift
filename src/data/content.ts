@@ -52,7 +52,7 @@ export const heroContent = {
   headline: "Healthcare investment platform for Africa",
   subheadline:
     "Pre-Seed to Series\u00A0A, debt and grant funding, transaction advisory, and strategic market entry to build the future of healthcare in Afrca.",
-  ctaPrimary: { label: "Submit Your Proposal", href: "http://tinyurl.com/jazarift" target="_blank" },
+  ctaPrimary: { label: "Submit Your Proposal", href: "http://tinyurl.com/jazarift", target: "_blank" },
   ctaSecondary: { label: "View Portfolio", href: "#portfolio" },
 };
 
@@ -314,7 +314,8 @@ export const applyCta = {
   headline: "Apply for a Long-Term Strategic Partnership",
   body: "If you are building or growing a healthcare innovation in Africa across digital health, medtech, biotech, or assistive technology; or looking for scale-up debt capital, we want to hear from you.",
   buttonLabel: "Submit Your Proposal",
-  buttonHref: "http://tinyurl.com/jazarift" target="_blank",
+  buttonHref: "http://tinyurl.com/jazarift",
+  buttonTarget: "_blank",
 };
 
 /* ── Footer ──────────────────────────────────────────────── */

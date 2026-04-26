@@ -55,6 +55,8 @@ export default function Hero() {
               <motion.a
                 className="wf-btn wf-btn-primary-hero"
                 href={heroContent.ctaPrimary.href}
+                target={heroContent.ctaPrimary.target}
+                rel={heroContent.ctaPrimary.target === '_blank' ? 'noreferrer' : undefined}
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}

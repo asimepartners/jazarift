@@ -25,6 +25,8 @@ export default function ApplyCta() {
                 <div className="d-flex align-items-center gap-3 mt-5">
                   <motion.a
                     href={applyCta.buttonHref}
+                    target={applyCta.buttonTarget}
+                    rel={applyCta.buttonTarget === '_blank' ? 'noreferrer' : undefined}
                     className="wf-btn wf-btn-light"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.97 }}
