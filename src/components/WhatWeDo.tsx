@@ -7,7 +7,7 @@ const pillars = [
     number: '01',
     label: 'Ventures',
     title: 'Jaza Rift Ventures',
-    body: 'A VC and asset management advisory company solely focused on healthcare in Africa. We propel startups from pre-Seed to Series A with targeted capital and hands-on support in digital health, medtech, and biotech.',
+    body: 'An investment holding company solely focused on healthcare in Africa. We support reslient founders and entrepreneurs from pre-Seed to Series A with targeted capital and hands-on support in digital health, medtech, biotech and assistive technologies.',
     icon: ChartIncreaseIcon,
     href: '#portfolio',
   },
@@ -23,7 +23,7 @@ const pillars = [
     number: '03',
     label: 'Innovation Lab',
     title: 'Innovation Lab',
-    body: 'A pan-African venture studio building from scratch startups in digital health, medtech, biotech, and assistive technologies. We also offer Corporate VC-as-a-Service and run hackathons, ideation labs, and human-centered design programs.',
+    body: 'A pan-African healthcare innovation team partnering with Global Health actors to drive innovations across the healthcare spectrum in Africa. We implement healthcare focused innovation programs, offer Corporate VC-as-a-Service and run hackathons, ideation labs, and human-centered design programs.',
     icon: TestTube01Icon,
     href: '#thesis',
   },
@@ -44,7 +44,7 @@ export default function WhatWeDo() {
           <div className="col-lg-5">
             <FadeUp>
               <h2 className="wf-display">
-                Three Pillars of<br />
+                One Platform for<br />
                 <span className="wf-display-accent">Healthcare Transformation</span>
               </h2>
             </FadeUp>
@@ -52,7 +52,7 @@ export default function WhatWeDo() {
           <div className="col-lg-5 offset-lg-2 mt-4 mt-lg-0 d-flex align-items-end">
             <BlurIn>
               <p className="wf-prose">
-                Jaza Rift operates at the intersection of capital, advisory expertise, and ground-level innovation creating a self-reinforcing ecosystem for healthcare change across Africa.
+                Jaza Rift operates at the intersection of capital, advisory expertise, and disruptive innovation creating an integrated ecosystem for healthcare impact across Africa.
               </p>
             </BlurIn>
           </div>

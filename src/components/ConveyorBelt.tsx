@@ -6,7 +6,7 @@ export default function ConveyorBelt() {
     <AnimatedSection className="wf-band-dark">
       <div className="container">
         <div className="wf-section-eyebrow-row wf-eyebrow-dark">
-          <span className="wf-eyebrow wf-eyebrow-yellow">The Conveyor Belt</span>
+          <span className="wf-eyebrow wf-eyebrow-yellow">The Innovation Continuum</span>
           <div className="wf-hr wf-hr-dark" />
         </div>
 

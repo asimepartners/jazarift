@@ -39,9 +39,9 @@ export default function Home() {
             <a href="#portfolio">Portfolio</a>
             <a href="#framework">Framework</a>
             <a href="#insights">Insights</a>
-            <a href="#apply">Apply</a>
+            <a href="http://tinyurl.com/jazarift">Apply</a>
           </div>
-          <a className={styles.navCta} href="#apply">
+          <a className={styles.navCta} href="http://tinyurl.com/jazarift">
             Get in Touch
           </a>
         </nav>
@@ -106,10 +106,10 @@ export default function Home() {
           </StaggerParent>
         </AnimatedSection>
 
-        {/* ── Conveyor Belt ──────────────────────────────── */}
+        {/* ── Innovation Continuum ──────────────────────────────── */}
         <AnimatedSection className={styles.conveyorBand}>
           <div className={styles.sectionHead}>
-            <span className={styles.sectionLabel}>The Conveyor Belt</span>
+            <span className={styles.sectionLabel}>The Innovation Continuum</span>
             <h2>From Invention to Investment</h2>
             <p>A seamless pipeline from idea to Pan-African scale.</p>
           </div>

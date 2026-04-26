@@ -52,15 +52,15 @@ export const heroContent = {
   headline: "Healthcare investment platform for Africa",
   subheadline:
     "Pre-Seed to Series\u00A0A, debt and grant funding, transaction advisory, and strategic market entry to build the future of healthcare in Afrca.",
-  ctaPrimary: { label: "Submit Your Proposal", href: "#apply" },
+  ctaPrimary: { label: "Submit Your Proposal", href: "http://tinyurl.com/jazarift" },
   ctaSecondary: { label: "View Portfolio", href: "#portfolio" },
 };
 
 export const heroStats = [
-  { value: "6", label: "Portfolio Companies" },
-  { value: "4", label: "Focus Sectors" },
+  { value: "9", label: "Portfolio Companies" },
+  { value: "4", label: "Focus Sectors: Digital health, Medtech, Biotech, Assistive Tech" },
   { value: "2", label: "Offices in Africa" },
-  { value: "21", label: "Francophone Markets" },
+  { value: "3", label: "Nexus (Climate, AI, Gender)" },
 ];
 
 /* ── Investment Thesis ───────────────────────────────────── */
@@ -79,7 +79,7 @@ export const thesisAreas: ThesisArea[] = [
     icon: "🤖",
     title: "Digitial Health",
     description:
-      "Software developed to solve a healthcare challenge. Convergence of health and tech to improve delivery and outcomes. Essentially Digital solutions (not hardware or physical assets).",
+      "Software developed to solve a healthcare challenge. Convergence of health and tech to improve delivery and outcomes. Essentially Digital solutions (not hardware or physical assets), including insuretech, fintech for health etc.",
   },
   {
     icon: "🌿",
@@ -91,13 +91,13 @@ export const thesisAreas: ThesisArea[] = [
     icon: "♀",
     title: "Biotech / Techbio",
     description:
-      "Technology based on biology, involving harnessing cellular and biomolecular processes to develop technologies and products that help improve people's health and lives. It provides breakthrough products and technologies to combat debilitating and rare diseases, reduce our environmental footprint, feed the hungry, use less and cleaner energy, and have safer, cleaner and more efficient industrial manufacturing processes.",
+      "Biotech uses living organisms and biological systems to create products and services. TechBio integrates cutting-edge technologies, like AI, big data analytics, nanotechnology, and robotics, with biological sciences to develop innovative solutions.",
   },
   {
     icon: "♿",
     title: "Assistive Technologies",
     description:
-      "Inclusive healthcare innovations for people living with disabilities across the continent.",
+      "Inclusive healthcare innovations for people living with disabilities across the continent. Services or products ranging from physical products to digital solutions that help people who have difficulty speaking, typing, writing, remembering, pointing, seeing, hearing, learning, walking, and many other things.",
   },
 ];
 

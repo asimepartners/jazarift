@@ -59,7 +59,7 @@ export default function Navbar() {
             </ul>
             <motion.a
               className="btn wf-btn-nav"
-              href="#apply"
+              href="http://tinyurl.com/jazarift"
               whileHover={{ scale: 1.04, y: -1 }}
               whileTap={{ scale: 0.96 }}
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
