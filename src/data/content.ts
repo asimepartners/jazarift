@@ -59,7 +59,7 @@ export const heroContent = {
 export const heroStats = [
   { value: "9", label: "Portfolio Companies" },
   { value: "4", label: "Focus Sectors: Digital health, Medtech, Biotech, Assistive Tech" },
-  { value: "2", label: "Offices in Africa" },
+  { value: "2", label: "Offices" },
   { value: "3", label: "Nexus (Climate, AI, Gender)" },
 ];
 
