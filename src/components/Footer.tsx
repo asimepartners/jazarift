@@ -20,7 +20,7 @@ export default function Footer() {
                 </h2>
               </div>
               <motion.a
-                href="mailto:info@jazarift.com"
+                href="mailto:connect@jazarift.com"
                 className="wf-ft-cta-btn"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.97 }}
@@ -47,10 +47,10 @@ export default function Footer() {
                   A healthcare-focused venture capital firm backing early-stage companies across Africa.
                 </p>
                 <div className="wf-ft-socials">
-                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="wf-ft-social">
+                  <a href="https://linkedin.com/company/jazarift" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="wf-ft-social">
                     <HugeiconsIcon icon={Linkedin01Icon} size={14} strokeWidth={1.5} />
                   </a>
-                  <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X" className="wf-ft-social">
+                  <a href="https://x.com/JazaRift" target="_blank" rel="noreferrer" aria-label="X" className="wf-ft-social">
                     <HugeiconsIcon icon={NewTwitterIcon} size={14} strokeWidth={1.5} />
                   </a>
                 </div>
@@ -82,7 +82,7 @@ export default function Footer() {
               {/* Contact col */}
               <div className="wf-ft-col">
                 <p className="wf-ft-col-label">Contact</p>
-                <a href="mailto:info@jazarift.com" className="wf-ft-contact-link">info@jazarift.com</a>
+                <a href="mailto:connect@jazarift.com" className="wf-ft-contact-link">connect@jazarift.com</a>
               </div>
 
             </div>

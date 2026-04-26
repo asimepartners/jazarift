@@ -41,7 +41,7 @@ export default function Home() {
             <a href="#insights">Insights</a>
             <a href="http://tinyurl.com/jazarift">Apply</a>
           </div>
-          <a className={styles.navCta} href="http://tinyurl.com/jazarift">
+          <a className={styles.navCta} href="http://tinyurl.com/jazarift" target="_blank">
             Get in Touch
           </a>
         </nav>
