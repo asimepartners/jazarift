@@ -1,5 +1,20 @@
+import { HugeiconsIcon } from '@hugeicons/react'
+import { AiBrain01Icon, Briefcase01Icon, ChartIncreaseIcon, Leaf01Icon, ManWomanIcon } from '@hugeicons/core-free-icons'
 import { fourCs, threeTs, diligenceCards } from '@/data/content'
 import { AnimatedSection, FadeUp, SlideLeft, StaggerParent, StaggerItem } from './Motion'
+
+const frameworkIcons = {
+  Team: ManWomanIcon,
+  Taste: AiBrain01Icon,
+  Terms: Briefcase01Icon,
+} as const
+
+const diligenceIcons = {
+  'Due Diligence': AiBrain01Icon,
+  'Financial Modelling & Independent Valuation': ChartIncreaseIcon,
+  'Depth, Breadth and Scale of Impact': Leaf01Icon,
+  'Where and How to Scale in Africa': Briefcase01Icon,
+} as const
 
 export default function Framework() {
   return (
@@ -42,7 +57,12 @@ export default function Framework() {
           {threeTs.map((t, i) => (
             <StaggerItem key={t.title} index={i} className="col-lg-4">
               <div className="wf-tt-card">
-                <div className="wf-tt-num">{t.code}</div>
+                <div className="wf-tt-top">
+                  <span className="wf-tt-icon">
+                    <HugeiconsIcon icon={frameworkIcons[t.title as keyof typeof frameworkIcons]} size={24} strokeWidth={1.8} color="currentColor" />
+                  </span>
+                  <div className="wf-tt-num">{t.code}</div>
+                </div>
                 <div className="wf-tt-divider" />
                 <h3 className="wf-card-heading">{t.title}</h3>
                 <p className="wf-card-body">{t.description}</p>
@@ -56,7 +76,12 @@ export default function Framework() {
           {diligenceCards.map((d, i) => (
             <StaggerItem key={d.title} index={i} className="col-md-6">
               <div className="wf-diligence-card">
-                <span className="wf-eyebrow">{d.label}</span>
+                <div className="wf-diligence-top">
+                  <span className="wf-tt-icon wf-diligence-icon">
+                    <HugeiconsIcon icon={diligenceIcons[d.title as keyof typeof diligenceIcons]} size={24} strokeWidth={1.8} color="currentColor" />
+                  </span>
+                  <span className="wf-eyebrow">{d.label}</span>
+                </div>
                 <h3 className="wf-card-heading mt-3">{d.title}</h3>
                 <p className="wf-card-body mt-2">{d.description}</p>
               </div>

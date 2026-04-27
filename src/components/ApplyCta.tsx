@@ -35,11 +35,6 @@ export default function ApplyCta() {
                     {applyCta.buttonLabel}
                     <HugeiconsIcon icon={ArrowRight01Icon} size={16} strokeWidth={2.5} className="ms-2" />
                   </motion.a>
-                  <div className="d-flex gap-2">
-                    <span className="wf-cta-pill">T</span>
-                    <span className="wf-cta-pill">T</span>
-                    <span className="wf-cta-pill">T</span>
-                  </div>
                 </div>
               </FadeUp>
             </div>

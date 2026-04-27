@@ -130,6 +130,95 @@ a { text-decoration: none; color: inherit; }
   z-index: 1000;
 }
 
+  .wf-cookie-shell {
+    position: fixed;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .wf-cookie-banner {
+    width: min(100%, 980px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.15rem 1.2rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 22px;
+    background: rgba(15,20,25,0.92);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 24px 70px rgba(0,0,0,0.22);
+    pointer-events: auto;
+  }
+
+  .wf-cookie-copy {
+    max-width: 640px;
+  }
+
+  .wf-cookie-eyebrow {
+    display: inline-block;
+    margin-bottom: 0.55rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.56);
+  }
+
+  .wf-cookie-title {
+    margin: 0 0 0.4rem;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--jz-white);
+  }
+
+  .wf-cookie-text {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.74);
+  }
+
+  .wf-cookie-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .wf-cookie-btn {
+    border: 0;
+    border-radius: 999px;
+    padding: 0.82rem 1.25rem;
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition: transform 0.25s var(--ease-smooth), background-color 0.25s var(--ease-smooth), color 0.25s var(--ease-smooth), box-shadow 0.25s var(--ease-smooth);
+  }
+
+  .wf-cookie-btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .wf-cookie-btn-primary {
+    background: var(--jz-blue);
+    color: var(--jz-white);
+    box-shadow: 0 12px 24px rgba(36,87,214,0.28);
+  }
+
+  .wf-cookie-btn-secondary {
+    background: rgba(255,255,255,0.08);
+    color: var(--jz-white);
+  }
+
 .wf-brand {
   display: flex;
   align-items: center;
@@ -554,6 +643,33 @@ a { text-decoration: none; color: inherit; }
   color: var(--jz-grey);
 }
 
+.wf-innovation-labs {
+  background: #05070a;
+}
+
+.wf-card-minimal-dark {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.08);
+}
+
+.wf-card-minimal-dark:hover {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  border-color: rgba(36,87,214,0.4);
+}
+
+.wf-card-icon-dark {
+  background: rgba(36,87,214,0.16);
+  color: var(--jz-white);
+}
+
+.wf-card-heading-dark {
+  color: var(--jz-white);
+}
+
+.wf-card-body-dark {
+  color: rgba(255,255,255,0.72);
+}
+
 /* ── 9b. What We Do — Three Pillars ────────────────────────── */
 .wf-whatwedo {
   background: var(--jz-off);
@@ -696,10 +812,26 @@ a { text-decoration: none; color: inherit; }
 }
 
 .wf-conveyor-line {
+  position: relative;
   flex: 1;
   height: 2px;
   background: linear-gradient(90deg, var(--jz-blue) 0%, rgba(36,87,214,0.2) 100%);
   margin-left: 0.5rem;
+  overflow: hidden;
+  transform-origin: left center;
+}
+
+.wf-conveyor-line-glow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 34%;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.92) 50%, rgba(255,255,255,0) 100%);
+  filter: blur(3px);
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .wf-conveyor-content { padding-right: 1rem; }
@@ -743,6 +875,15 @@ a { text-decoration: none; color: inherit; }
   overflow: hidden;
 }
 
+.wf-portfolio-card-link {
+  display: block;
+  color: inherit;
+}
+
+.wf-portfolio-card-clickable {
+  cursor: pointer;
+}
+
 .wf-portfolio-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 60px rgba(0,0,0,0.06);
@@ -752,6 +893,20 @@ a { text-decoration: none; color: inherit; }
 .wf-portfolio-card:hover .wf-portfolio-arrow {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.wf-portfolio-logo-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  margin-bottom: 1.2rem;
+}
+
+.wf-portfolio-logo {
+  width: auto;
+  max-width: 150px;
+  max-height: 44px;
+  object-fit: contain;
 }
 
 .wf-portfolio-cat-badge {
@@ -833,12 +988,34 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 20px 60px rgba(0,0,0,0.06);
 }
 
+.wf-tt-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wf-tt-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(36,87,214,0.08);
+  color: var(--jz-blue);
+  flex-shrink: 0;
+}
+
 .wf-tt-num {
+  max-width: 170px;
   font-family: var(--font-title);
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 0.95rem;
   color: var(--jz-blue);
   letter-spacing: -0.02em;
+  line-height: 1.35;
+  text-align: right;
 }
 
 .wf-tt-divider {
@@ -861,6 +1038,18 @@ a { text-decoration: none; color: inherit; }
 .wf-diligence-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 48px rgba(0,0,0,0.05);
+}
+
+.wf-diligence-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wf-diligence-icon {
+  width: 46px;
+  height: 46px;
 }
 
 /* ── 13. Francophone ────────────────────────────────────────── */
@@ -1219,7 +1408,9 @@ a { text-decoration: none; color: inherit; }
   .wf-hero-stat-cell { flex: 0 0 50%; max-width: none; }
   .wf-hero-stat-cell + .wf-hero-stat-cell::before { display: none; }
 
-  .wf-pillars { grid-template-columns: 1fr 1fr; gap: 1.25rem; }\n\n  .wf-conveyor-row {
+  .wf-pillars { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+
+  .wf-conveyor-row {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
@@ -1228,6 +1419,16 @@ a { text-decoration: none; color: inherit; }
 
   .wf-ft-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
   .wf-ft-cta-inner { flex-direction: column; align-items: flex-start; gap: 2rem; }
+
+  .wf-cookie-banner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wf-cookie-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1254,6 +1455,26 @@ a { text-decoration: none; color: inherit; }
   .wf-insight-hero { padding: 2rem 1.5rem; }
 
   .wf-cta-card { padding: 2.5rem 1.5rem; }
+
+  .wf-cookie-shell {
+    left: 0.9rem;
+    right: 0.9rem;
+    bottom: 0.9rem;
+  }
+
+  .wf-cookie-banner {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  .wf-cookie-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wf-cookie-btn {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
