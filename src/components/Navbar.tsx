@@ -44,15 +44,22 @@ export default function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="mainNav">
             <ul className="navbar-nav ms-auto me-lg-4 gap-lg-1">
-              {['VENTURES', 'ADVISORY', 'INNOVATION LAB', 'PORTFOLIO', 'INSIGHTS'].map((item) => (
-                <li className="nav-item" key={item}>
+              {[
+                { label: 'WHAT WE DO', href: '#ventures' },
+                { label: 'VENTURES', href: '#thesis' },
+                { label: 'ADVISORY', href: '#framework' },
+                { label: 'INNOVATION LAB', href: '#innovation-lab' },
+                { label: 'PORTFOLIO', href: '#portfolio' },
+                { label: 'INSIGHTS', href: '#insights' },
+              ].map((item) => (
+                <li className="nav-item" key={item.label}>
                   <motion.a
                     className="nav-link wf-nav-link"
-                    href={`#${item.toLowerCase()}`}
+                    href={item.href}
                     whileHover={{ y: -1, opacity: 1 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 20 }}
                   >
-                    {item}
+                    {item.label}
                   </motion.a>
                 </li>
               ))}
