@@ -60,7 +60,7 @@ export default function Footer() {
               <div className="wf-ft-col">
                 <p className="wf-ft-col-label">Navigate</p>
                 <nav className="wf-ft-nav">
-                  {['Thesis', 'Portfolio', 'Framework', 'Francophone', 'Insights', 'Apply'].map((item) => (
+                  {['Thesis', 'Portfolio', 'Framework', 'Insights', 'Apply'].map((item) => (
                     <a key={item} href={`#${item.toLowerCase()}`} className="wf-ft-link">{item}</a>
                   ))}
                 </nav>
