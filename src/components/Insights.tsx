@@ -2,7 +2,7 @@ import { AnimatedSection, FadeUp, StaggerParent, StaggerItem, motion } from './M
 
 const platformCards = [
   {
-    label: 'Newsletter',
+    label: 'Blog & Deep Research',
     title: 'Substack',
     href: 'https://jazarift.substack.com',
     description: 'Read long-form essays, sector analysis, and founder-focused thinking on African healthcare innovation from the Jaza Rift ecosystem.',
@@ -16,7 +16,7 @@ const platformCards = [
     ),
   },
   {
-    label: 'Professional Network',
+    label: 'Leadership Articles & Research',
     title: 'LinkedIn',
     href: 'https://linkedin.com/company/jazarift/posts',
     description: 'Follow our updates, perspectives, ecosystem highlights, and transaction advisory insights across Africa’s health innovation landscape.',
@@ -31,7 +31,7 @@ const platformCards = [
     ),
   },
   {
-    label: 'Video',
+    label: 'Podcasts & Interviews',
     title: 'YouTube',
     href: 'https://youtube.com/@jazarift',
     description: 'Watch interviews, market explainers, founder conversations, and practical video content on African healthcare innovation and capital.',
@@ -56,7 +56,7 @@ export default function Insights() {
         <div className="row mt-5 mb-5">
           <div className="col-lg-7">
             <FadeUp>
-              <h2 className="wf-display">Insights &<br />Channels</h2>
+              <h2 className="wf-display">Insights & Research</h2>
             </FadeUp>
           </div>
         </div>

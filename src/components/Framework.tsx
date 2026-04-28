@@ -30,8 +30,7 @@ export default function Framework({ embedded = false }: FrameworkProps) {
             </FadeUp>
             <FadeUp index={1}>
               <p className="wf-prose mt-3">
-                We evaluate all investments through our 3Ts framework 
-                a rigorous but founder-friendly approach built for long-term healthcare value creation.
+                We evaluate all investments through our 3Ts framework, a rigorous but founder-friendly approach built for long-term healthcare value creation.
               </p>
             </FadeUp>
           </div>

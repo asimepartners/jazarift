@@ -74,7 +74,7 @@ export const thesisIntro = {
     "> Sector: digital health, medtech, biotech, techbio, assistive technologies, femtech.",
     "> Stage: pre-seed, seed, Series A, and exceptionally Series B.",
     "> Tickets: $200,000 to $2M initial investment.",
-    "> Countries: pan-African (Kenya, Nigeria, Egypt, South Africa) as primary. And Senegal, DRC, Côte d’Ivoire, Tunisia, Ethiopia and Tanzania as secondary markets.",
+    "> Countries: pan-African (Kenya, Nigeria, Egypt, South Africa) as primary. And Senegal, DRC, Côte d’Ivoire, Tunisia, Ethiopia and Tanzania as secondary markets."
   ],
 };
 

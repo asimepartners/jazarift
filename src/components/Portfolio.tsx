@@ -38,7 +38,7 @@ export default function Portfolio() {
         <div className="row mt-5 mb-5">
           <div className="col-lg-7">
             <FadeUp>
-              <h2 className="wf-display">Innovations<br />We're Backing</h2>
+              <h2 className="wf-display">Disruptive Innovations We're Backing</h2>
             </FadeUp>
           </div>
         </div>
