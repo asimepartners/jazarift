@@ -26,7 +26,7 @@ export default function Framework({ embedded = false }: FrameworkProps) {
         <div className={embedded ? 'row' : 'row mt-5'}>
           <div className="col-lg-6">
             <FadeUp>
-              <h2 className="wf-display">Health<br />Nexus</h2>
+              <h2 className="wf-display">Health Nexus</h2>
             </FadeUp>
             <FadeUp index={1}>
               <p className="wf-prose mt-3">
