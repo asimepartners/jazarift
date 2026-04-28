@@ -17,14 +17,14 @@ export default function InnovationLabs() {
     <AnimatedSection id="innovation-lab" className="wf-band-dark wf-innovation-labs">
       <div className="container">
         <div className="wf-section-eyebrow-row wf-eyebrow-dark">
-          <span className="wf-eyebrow">Innovation Labs</span>
+          <span className="wf-eyebrow">Global Health Innovations</span>
           <div className="wf-hr wf-hr-dark" />
         </div>
 
         <div className="row mt-5">
           <div className="col-lg-5">
             <SlideRight>
-              <h2 className="wf-display text-white">Innovation Labs</h2>
+              <h2 className="wf-display text-white">Global Health Innovations</h2>
             </SlideRight>
           </div>
           <div className="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
