@@ -70,13 +70,11 @@ export const thesisIntro = {
   headline: "An integrated investment platform for Healthcare in Africa: from Idea to Scale and Impact",
   body: [
     "Africa's youthful population  median age 18 holds immense potential to design new healthcare solutions fit for the market. Yet startups consistently fall through the gap between early incubation and later-stage funding. In parallel, healthcare SMEs face working capital and growth equity shortages to scale and grow their businesses.",
-    "Jaza Rift fills those gaps.",
-    "We invest from pre-Seed to Series A in the most promising, resilient and innovative digital health, medtech, biotech/techbio and assistive tech start-ups that address pressing unmet clinical needs and aim to transform patients’ lives in Africa. ",
-    "Our Investment Criteria: ",
+    "Jaza Rift fills those gaps. We invest in the most promising, resilient and innovative start-ups that address pressing unmet clinical needs and aim to transform patients’ lives in Africa. Our Investment Criteria: ",
     "> Sector: digital health, medtech, biotech, techbio, assistive technologies, femtech.",
     "> Stage: pre-seed, seed, Series A, and exceptionally Series B.",
     "> Tickets: $200,000 to $2M initial investment.",
-    "> Geographies: pan-African, with Kenya, Nigeria, Egypt, South Africa, Senegal, DRC, Côte d’Ivoire, Tunisia, Ethiopia and Tanzania as primary markets.",
+    "> Geographies: pan-African (Kenya, Nigeria, Egypt, South Africa) as primary. And Senegal, DRC, Côte d’Ivoire, Tunisia, Ethiopia and Tanzania as secondary markets.",
   ],
 };
 
