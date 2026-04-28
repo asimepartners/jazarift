@@ -3,6 +3,7 @@ import { AiBrain01Icon, Leaf01Icon, ManWomanIcon, WheelchairIcon } from '@hugeic
 import type { IconSvgElement } from '@hugeicons/react'
 import { thesisIntro, thesisAreas } from '@/data/content'
 import { AnimatedSection, FadeUp, SlideRight, StaggerParent, StaggerItem, motion } from './Motion'
+import ConveyorBelt from './ConveyorBelt'
 
 const innovationIcons: IconSvgElement[] = [
   AiBrain01Icon,
@@ -52,6 +53,8 @@ export default function InnovationLabs() {
             </StaggerItem>
           ))}
         </StaggerParent>
+
+        <ConveyorBelt embedded />
       </div>
     </AnimatedSection>
   )

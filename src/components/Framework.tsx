@@ -1,7 +1,7 @@
 import { HugeiconsIcon } from '@hugeicons/react'
-import { AiBrain01Icon, Briefcase01Icon, ChartIncreaseIcon, Leaf01Icon, ManWomanIcon } from '@hugeicons/core-free-icons'
-import { fourCs, threeTs, diligenceCards } from '@/data/content'
-import { AnimatedSection, FadeUp, SlideLeft, StaggerParent, StaggerItem } from './Motion'
+import { AiBrain01Icon, Briefcase01Icon, ManWomanIcon } from '@hugeicons/core-free-icons'
+import { threeTs } from '@/data/content'
+import { AnimatedSection, FadeUp, StaggerParent, StaggerItem } from './Motion'
 
 const frameworkIcons = {
   Team: ManWomanIcon,
@@ -9,46 +9,31 @@ const frameworkIcons = {
   Terms: Briefcase01Icon,
 } as const
 
-const diligenceIcons = {
-  'Due Diligence': AiBrain01Icon,
-  'Financial Modelling & Independent Valuation': ChartIncreaseIcon,
-  'Depth, Breadth and Scale of Impact': Leaf01Icon,
-  'Where and How to Scale in Africa': Briefcase01Icon,
-} as const
+interface FrameworkProps {
+  embedded?: boolean
+}
 
-export default function Framework() {
-  return (
-    <AnimatedSection id="framework" className="wf-section wf-section-grey">
-      <div className="container">
+export default function Framework({ embedded = false }: FrameworkProps) {
+  const content = (
+    <div id="framework" className={embedded ? 'wf-framework-embedded' : undefined}>
+      {embedded ? null : (
         <div className="wf-section-eyebrow-row">
           <span className="wf-eyebrow">Our Framework</span>
           <div className="wf-hr" />
         </div>
+      )}
 
-        {/* Hero row with 4C badges */}
-        <div className="row mt-5 align-items-center">
+        <div className={embedded ? 'row' : 'row mt-5'}>
           <div className="col-lg-6">
             <FadeUp>
-              <h2 className="wf-display">How We<br />Invest</h2>
+              <h2 className="wf-display">Health<br />Nexus</h2>
             </FadeUp>
             <FadeUp index={1}>
               <p className="wf-prose mt-3">
                 We evaluate all investments through our 3Ts framework 
-                a rigorous but founder-friendly approach powered by our 4Cs.
+                a rigorous but founder-friendly approach built for long-term healthcare value creation.
               </p>
             </FadeUp>
-          </div>
-          <div className="col-lg-5 offset-lg-1 mt-4 mt-lg-0">
-            <SlideLeft>
-              <div className="d-flex flex-wrap gap-3 justify-content-lg-end">
-                {fourCs.map((c) => (
-                  <div key={c.label} className="wf-4c-pill">
-                    <strong>{c.code}</strong>
-                    <span>{c.label}</span>
-                  </div>
-                ))}
-              </div>
-            </SlideLeft>
           </div>
         </div>
 
@@ -70,25 +55,16 @@ export default function Framework() {
             </StaggerItem>
           ))}
         </StaggerParent>
+    </div>
+  )
 
-        {/* Diligence cards */}
-        <StaggerParent className="row g-4 mt-4">
-          {diligenceCards.map((d, i) => (
-            <StaggerItem key={d.title} index={i} className="col-md-6">
-              <div className="wf-diligence-card">
-                <div className="wf-diligence-top">
-                  <span className="wf-tt-icon wf-diligence-icon">
-                    <HugeiconsIcon icon={diligenceIcons[d.title as keyof typeof diligenceIcons]} size={24} strokeWidth={1.8} color="currentColor" />
-                  </span>
-                  <span className="wf-eyebrow">{d.label}</span>
-                </div>
-                <h3 className="wf-card-heading mt-3">{d.title}</h3>
-                <p className="wf-card-body mt-2">{d.description}</p>
-              </div>
-            </StaggerItem>
-          ))}
-        </StaggerParent>
-      </div>
+  if (embedded) {
+    return content
+  }
+
+  return (
+    <AnimatedSection id="framework" className="wf-section wf-section-grey">
+      <div className="container">{content}</div>
     </AnimatedSection>
   )
 }

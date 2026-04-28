@@ -1,10 +1,13 @@
 import { conveyorSteps } from '@/data/content'
 import { AnimatedSection, StaggerParent, StaggerItem, FadeUp, motion } from './Motion'
 
-export default function ConveyorBelt() {
-  return (
-    <AnimatedSection className="wf-band-dark">
-      <div className="container">
+interface ConveyorBeltProps {
+  embedded?: boolean
+}
+
+export default function ConveyorBelt({ embedded = false }: ConveyorBeltProps) {
+  const content = (
+    <div className={embedded ? 'wf-conveyor-embedded' : undefined}>
         <div className="wf-section-eyebrow-row wf-eyebrow-dark">
           <span className="wf-eyebrow wf-eyebrow-yellow">The Innovation Continuum</span>
           <div className="wf-hr wf-hr-dark" />
@@ -56,7 +59,16 @@ export default function ConveyorBelt() {
             </StaggerItem>
           ))}
         </StaggerParent>
-      </div>
+    </div>
+  )
+
+  if (embedded) {
+    return content
+  }
+
+  return (
+    <AnimatedSection className="wf-band-dark">
+      <div className="container">{content}</div>
     </AnimatedSection>
   )
 }

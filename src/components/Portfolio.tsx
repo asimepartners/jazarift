@@ -61,7 +61,7 @@ export default function Portfolio() {
                         <img
                           src={portfolioLogos[co.name]}
                           alt={`${co.name} logo`}
-                          className="wf-portfolio-logo"
+                          className={`wf-portfolio-logo${co.name === 'Revna Biosciences' ? ' wf-portfolio-logo--revna' : ''}`}
                           loading="lazy"
                         />
                       </div>
@@ -85,7 +85,7 @@ export default function Portfolio() {
                       <img
                         src={portfolioLogos[co.name]}
                         alt={`${co.name} logo`}
-                        className="wf-portfolio-logo"
+                        className={`wf-portfolio-logo${co.name === 'Revna Biosciences' ? ' wf-portfolio-logo--revna' : ''}`}
                         loading="lazy"
                       />
                     </div>

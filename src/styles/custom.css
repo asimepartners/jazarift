@@ -293,6 +293,16 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 
+.wf-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.wf-cta-btn-alt {
+  min-height: 52px;
+}
+
 .wf-btn-ghost {
   background: transparent;
   color: var(--jz-white);
@@ -647,6 +657,12 @@ a { text-decoration: none; color: inherit; }
   background: #05070a;
 }
 
+.wf-conveyor-embedded {
+  margin-top: 6rem;
+  padding-top: 5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
 .wf-card-minimal-dark {
   background: rgba(255,255,255,0.04);
   border-color: rgba(255,255,255,0.08);
@@ -668,6 +684,11 @@ a { text-decoration: none; color: inherit; }
 
 .wf-card-body-dark {
   color: rgba(255,255,255,0.72);
+}
+
+.wf-framework-embedded {
+  margin-top: 4rem;
+  padding-top: 0;
 }
 
 /* ── 9b. What We Do — Three Pillars ────────────────────────── */
@@ -898,15 +919,20 @@ a { text-decoration: none; color: inherit; }
 .wf-portfolio-logo-wrap {
   display: flex;
   align-items: center;
-  min-height: 56px;
-  margin-bottom: 1.2rem;
+  min-height: 88px;
+  margin-bottom: 1.4rem;
 }
 
 .wf-portfolio-logo {
   width: auto;
-  max-width: 150px;
-  max-height: 44px;
+  max-width: 185px;
+  max-height: 60px;
   object-fit: contain;
+}
+
+.wf-portfolio-logo--revna {
+  max-width: 245px;
+  max-height: 84px;
 }
 
 .wf-portfolio-cat-badge {
@@ -1153,6 +1179,27 @@ a { text-decoration: none; color: inherit; }
 .wf-insight-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+}
+
+.wf-insight-card-link {
+  display: block;
+  color: inherit;
+}
+
+.wf-insight-platform-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(36,87,214,0.08);
+  color: var(--jz-blue);
+}
+
+.wf-insight-platform-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 /* ── 15. Apply / CTA ────────────────────────────────────────── */
@@ -1473,6 +1520,16 @@ a { text-decoration: none; color: inherit; }
   }
 
   .wf-cookie-btn {
+    width: 100%;
+  }
+
+  .wf-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wf-cta-btn-alt {
+    justify-content: center;
     width: 100%;
   }
 }

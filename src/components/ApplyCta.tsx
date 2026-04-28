@@ -4,6 +4,19 @@ import { applyCta } from '@/data/content'
 import { AnimatedSection, FadeUp, motion } from './Motion'
 
 export default function ApplyCta() {
+  const ctaButtons = [
+    {
+      label: 'Raising Private Equity of $3M+?',
+      href: 'https://tinyurl.com/jazape',
+      target: '_blank',
+    },
+    {
+      label: 'Raising Private Debt of $5M+?',
+      href: 'https://tinyurl.com/jazawc',
+      target: '_blank',
+    },
+  ] as const
+
   return (
     <AnimatedSection id="apply" className="wf-section-cta">
       <div className="container">
@@ -22,19 +35,22 @@ export default function ApplyCta() {
                 <p className="wf-prose-light mt-4">{applyCta.body}</p>
               </FadeUp>
               <FadeUp index={2}>
-                <div className="d-flex align-items-center gap-3 mt-5">
-                  <motion.a
-                    href={applyCta.buttonHref}
-                    target={applyCta.buttonTarget}
-                    rel={applyCta.buttonTarget === '_blank' ? 'noreferrer' : undefined}
-                    className="wf-btn wf-btn-light"
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.97 }}
-                    transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                  >
-                    {applyCta.buttonLabel}
-                    <HugeiconsIcon icon={ArrowRight01Icon} size={16} strokeWidth={2.5} className="ms-2" />
-                  </motion.a>
+                <div className="wf-cta-actions mt-5">
+                  {ctaButtons.map((button) => (
+                    <motion.a
+                      key={button.label}
+                      href={button.href}
+                      target={button.target}
+                      rel={button.target === '_blank' ? 'noreferrer' : undefined}
+                      className="wf-btn wf-btn-light wf-cta-btn-alt"
+                      whileHover={{ scale: 1.03, y: -2 }}
+                      whileTap={{ scale: 0.97 }}
+                      transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+                    >
+                      {button.label}
+                      <HugeiconsIcon icon={ArrowRight01Icon} size={16} strokeWidth={2.5} className="ms-2" />
+                    </motion.a>
+                  ))}
                 </div>
               </FadeUp>
             </div>

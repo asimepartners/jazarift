@@ -70,34 +70,34 @@ export const thesisIntro = {
   headline: "An integrated investment platform for Healthcare in Africa: from Idea to Scale and Impact",
   body: [
     "Africa's youthful population  median age 18 holds immense potential to design new healthcare solutions fit for the market. Yet startups consistently fall through the gap between early incubation and later-stage funding. In parallel, healthcare SMEs face working capital and growth equity shortages to scale and grow their businesses. Jaza Rift fills those gaps.",
-    "In partnership with leading thought stakeholders, we've built a seamless pipeline: from research to commercialisation, idea to market, and scale in multiple countries, no other organisation in Africa offers this end-to-end continuity for healthcare investments as a platform to scale across Africa.",
+    "We invest from pre-Seed to Series A in the most promising, resilient and innovative digital health, medtech, biotech/techbio and assistive tech start-ups that address pressing unmet clinical needs and aim to transform patients’ lives in Africa. Our Investment Criteria: Sector: digital health, medtech, biotech, techbio, assistive technologies, femtech. Stage: pre-seed, seed, Series A, and exceptionally Series B. Tickets: $200,000 to $2M initial investment. Geographies: pan-African, with Kenya, Nigeria, Egypt, South Africa, Senegal, DRC, Côte d’Ivoire, Tunisia, Ethiopia and Tanzania as primary markets.",
   ],
 };
 
 export const thesisAreas: ThesisArea[] = [
   {
     icon: "🤖",
-    title: "Digitial Health",
+    title: "AI & Health",
     description:
-      "Software developed to solve a healthcare challenge. Convergence of health and tech to improve delivery and outcomes. Essentially Digital solutions (not hardware or physical assets), including insuretech, fintech for health etc.",
+      "We actively engage Global Health actors and investors at the intersection of Artificial Intelligence (AI), Machine Learning (ML), and healthcare in Africa. This intersection presents a compelling opportunity to significantly improve healthcare outcomes by enabling cost-effective, accessible and quality early disease detection, optimizing treatment plans, and enhancing healthcare delivery systems. With a growing and youthful population, massively growing digitization, Africa stands to benefit immensely from innovative AI-driven solutions. More at Ethos Verity AI.",
   },
   {
     icon: "🌿",
-    title: "Medtech",
+    title: "Climate & Health",
     description:
-      "Medical technologies are products or solutions (ideally with services) used to save and improve people’s lives, by preventing, diagnosing, monitoring, treating and caring for diseases (- at every phase of the patient pathway).",
+      "With Africa being disproportionately affected by climate change, investing in climate-resilient healthcare infrastructure and solutions can catalyze transformative change and create lasting benefits for communities across the continent. This presents a compelling opportunity to address pressing challenges while generating positive social and financial returns: improving healthcare access, resilience, and outcomes in the face of climate change impacts (access to renewable energy, low consumption healthcare technology, decentralized disease surveillance, access to affordable data, and community resilience offer avenues for impactful investments).",
   },
   {
     icon: "♀",
-    title: "Biotech / Techbio",
+    title: "Gender & Health",
     description:
-      "Biotech uses living organisms and biological systems to create products and services. TechBio integrates cutting-edge technologies, like AI, big data analytics, nanotechnology, and robotics, with biological sciences to develop innovative solutions.",
+      "Unique opportunity to address women and girl's challenges in Africa through improving healthcare access, reducing maternal mortality, combating gender-based violence, and promoting reproductive health, global health actors and investors can contribute to building healthier and more equitable societies.",
   },
   {
     icon: "♿",
-    title: "Assistive Technologies",
+    title: "Mental & Behavioral Health",
     description:
-      "Inclusive healthcare innovations for people living with disabilities across the continent. Services or products ranging from physical products to digital solutions that help people who have difficulty speaking, typing, writing, remembering, pointing, seeing, hearing, learning, walking, and many other things.",
+      "Mental health and behavioral health innovations are growing on the continent, with locally rooted models that help remove stigma, provide safe access and support youth and founders’ mental health. We’re the first and only investment company signatory of the Founder Mental Health pledge.",
   },
 ];
 
@@ -311,8 +311,8 @@ export const insights: InsightCard[] = [
 /* ── Apply CTA ───────────────────────────────────────────── */
 
 export const applyCta = {
-  headline: "Apply for a Long-Term Strategic Partnership",
-  body: "If you are building or growing a healthcare innovation in Africa across digital health, medtech, biotech, or assistive technology; or looking for scale-up debt capital, we want to hear from you.",
+  headline: "Transaction Advisory Services",
+  body: "African Healthcare SMEs and Scale Ups looking for $5M capital in debt, equity or quasi-equity, CFO services or AI Systems and workflow automation solutions.",
   buttonLabel: "Submit Your Proposal",
   buttonHref: "http://tinyurl.com/jazarift",
   buttonTarget: "_blank",
