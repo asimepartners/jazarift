@@ -159,6 +159,20 @@ export const globalHealthInnovationAreas: ThesisArea[] = [
   },
 ];
 
+export const innovationLabsIntro = {
+  body: [
+    "The innovation lab offers services ranging from:",
+    "Ideation as a Service: human centered design frameworks to test and validate new healthcare or accessibility business ideas with rapid prototyping innovation workshops.",
+    "Design as a Service: an internal or outsourced design team whenever you need it for all your UX/UI, brand identity and pitch deck designs.",
+    "Capital raising as a Service: Fundraising strategy, process, and workshop to help you secure early-stage investments and grant funding for your startup.",
+    "AI & Engineering as a Service: a product development team to build and launch MVP for non-technical founders. And an AI / ML & Data Science team to facilitate and enable AI & ML into your startup.",
+    "Marketing & Branding as a Service: tailored solution that supports your marketing and branding functions on-demand, from strategy development to execution.",
+    "Legal & Tax as a Service: company creation, company secretary, structure, operating agreements, tax and compliance advisory on-demand.",
+    "CFO as a Service: get fractional CFO (not accounting) support with management and board reporting (budget vs. actual variance analysis and insights, business KPI analysis & reporting and profitability analysis), budgeting and reporting, funding strategy and support and even custom CFO Engagement.",
+    "Scale-up as a Service: in partnership with a leading tech platform, playbooks (including the Growth Academy) enables scale readiness assessment, scale methodology and coaching/mentoring to help scale 10x innovations and inventions.",
+  ],
+};
+
 /* ── Healthcare Platform ───────────────────────────────────────── */
 
 export const conveyorSteps: ConveyorStep[] = [

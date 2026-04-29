@@ -23,21 +23,23 @@ export default function Framework({ embedded = false }: FrameworkProps) {
         </div>
       )}
 
-        <div className={embedded ? 'row' : 'row mt-5'}>
-          <div className="col-lg-6">
-            <FadeUp>
-              <h2 className="wf-display">Health Nexus</h2>
-            </FadeUp>
-            <FadeUp index={1}>
-              <p className="wf-prose mt-3">
-                We evaluate all investments through our 3Ts framework, a rigorous but founder-friendly approach built for long-term healthcare value creation.
-              </p>
-            </FadeUp>
+        {embedded ? null : (
+          <div className="row mt-5">
+            <div className="col-lg-6">
+              <FadeUp>
+                <h2 className="wf-display">Health Nexus</h2>
+              </FadeUp>
+              <FadeUp index={1}>
+                <p className="wf-prose mt-3">
+                  We evaluate all investments through our 3Ts framework, a rigorous but founder-friendly approach built for long-term healthcare value creation.
+                </p>
+              </FadeUp>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* 3Ts cards */}
-        <StaggerParent className="row g-4 mt-5">
+        <StaggerParent className={`row g-4${embedded ? '' : ' mt-5'}`}>
           {threeTs.map((t, i) => (
             <StaggerItem key={t.title} index={i} className="col-lg-4">
               <div className="wf-tt-card">

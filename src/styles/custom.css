@@ -84,6 +84,20 @@ a { text-decoration: none; color: inherit; }
   max-width: 540px;
 }
 
+.wf-thesis-list {
+  margin: 1.2rem 0 0;
+  padding-left: 1.35rem;
+}
+
+.wf-thesis-list-item {
+  margin-bottom: 0.8rem;
+  line-height: 1.8;
+}
+
+.wf-thesis-list-item:last-child {
+  margin-bottom: 0;
+}
+
 .wf-prose-on-blue {
   font-size: 1.05rem;
   line-height: 1.75;
@@ -676,6 +690,21 @@ a { text-decoration: none; color: inherit; }
   background: #05070a;
 }
 
+.wf-innovation-list {
+  margin: 1.4rem 0 0;
+  padding-left: 1.35rem;
+  max-width: 620px;
+}
+
+.wf-innovation-list-item {
+  margin-bottom: 0.9rem;
+  line-height: 1.8;
+}
+
+.wf-innovation-list-item:last-child {
+  margin-bottom: 0;
+}
+
 .wf-conveyor-embedded {
   margin-top: 6rem;
   padding-top: 5rem;
@@ -708,6 +737,62 @@ a { text-decoration: none; color: inherit; }
 .wf-framework-embedded {
   margin-top: 4rem;
   padding-top: 0;
+}
+
+.wf-section-how-we-invest {
+  padding-top: 0;
+  background: var(--jz-white);
+}
+
+#how-we-invest .wf-display {
+  font-size: clamp(2.5rem, 4.9vw, 4rem);
+}
+
+.wf-how-invest-shell {
+  padding: 2.25rem 2.4rem;
+  background: var(--jz-white);
+}
+
+.wf-how-invest-title {
+  max-width: none;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.wf-how-invest-prose {
+  max-width: 560px;
+  font-size: 1.05rem;
+  color: #4d5765;
+}
+
+.wf-how-invest-card {
+  height: 100%;
+  padding: 2.25rem 2.3rem 2rem;
+  border-left: 1px solid rgba(15,23,42,0.08);
+  background: var(--jz-white);
+}
+
+.wf-how-invest-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  background: #f2f4fb;
+  color: #7b8794;
+}
+
+.wf-how-invest-card-title {
+  margin-bottom: 0.85rem;
+  font-size: 1.28rem;
+}
+
+.wf-how-invest-card-body {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #5f6b7a;
 }
 
 /* ── 9b. What We Do — Three Pillars ────────────────────────── */
@@ -1474,6 +1559,10 @@ a { text-decoration: none; color: inherit; }
   .wf-hero-stat-cell { flex: 0 0 50%; max-width: none; }
   .wf-hero-stat-cell + .wf-hero-stat-cell::before { display: none; }
 
+  .wf-how-invest-shell {
+    padding: 2rem 1.5rem;
+  }
+
   .wf-pillars { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
 
   .wf-conveyor-row {
@@ -1498,6 +1587,12 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 767.98px) {
+  .wf-how-invest-card {
+    padding: 1.95rem 1.6rem;
+    border-left: none;
+    border-top: 1px solid rgba(15,23,42,0.08);
+  }
+
   .wf-conveyor-row {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1554,6 +1649,10 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 575.98px) {
+  .wf-how-invest-shell {
+    padding: 1.75rem 1.25rem;
+  }
+
   .wf-card-minimal,
   .wf-portfolio-card,
   .wf-tt-card,

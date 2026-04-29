@@ -13,6 +13,11 @@ const thesisIcons: IconSvgElement[] = [
 ]
 
 export default function Thesis() {
+  const introParagraphs = thesisIntro.body.filter((item) => !item.startsWith('>'))
+  const criteriaItems = thesisIntro.body
+    .filter((item) => item.startsWith('>'))
+    .map((item) => item.replace(/^>\s*/, ''))
+
   return (
     <AnimatedSection id="thesis" className="wf-section">
       <div className="container">
@@ -30,11 +35,20 @@ export default function Thesis() {
             </SlideRight>
           </div>
           <div className="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
-            {thesisIntro.body.map((para, i) => (
+            {introParagraphs.map((para, i) => (
               <FadeUp key={i} index={i}>
                 <p className="wf-prose">{para}</p>
               </FadeUp>
             ))}
+            <FadeUp index={introParagraphs.length}>
+              <ul className="wf-prose wf-thesis-list">
+                {criteriaItems.map((item, index) => (
+                  <li key={index} className="wf-thesis-list-item">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </FadeUp>
           </div>
         </div>
 

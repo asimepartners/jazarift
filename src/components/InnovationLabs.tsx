@@ -1,7 +1,7 @@
 import { HugeiconsIcon } from '@hugeicons/react'
 import { AiBrain01Icon, Leaf01Icon, ManWomanIcon, WheelchairIcon } from '@hugeicons/core-free-icons'
 import type { IconSvgElement } from '@hugeicons/react'
-import { globalHealthInnovationAreas, thesisIntro } from '@/data/content'
+import { globalHealthInnovationAreas, innovationLabsIntro } from '@/data/content'
 import { AnimatedSection, FadeUp, SlideRight, StaggerParent, StaggerItem, motion } from './Motion'
 import ConveyorBelt from './ConveyorBelt'
 
@@ -13,11 +13,13 @@ const innovationIcons: IconSvgElement[] = [
 ]
 
 export default function InnovationLabs() {
+  const [introText, ...serviceItems] = innovationLabsIntro.body
+
   return (
     <AnimatedSection id="innovation-lab" className="wf-band-dark wf-innovation-labs">
       <div className="container">
         <div className="wf-section-eyebrow-row wf-eyebrow-dark">
-          <span className="wf-eyebrow">Global Health Innovations</span>
+          <span className="wf-eyebrow">Innovations Lab</span>
           <div className="wf-hr wf-hr-dark" />
         </div>
 
@@ -28,11 +30,18 @@ export default function InnovationLabs() {
             </SlideRight>
           </div>
           <div className="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
-            {thesisIntro.body.map((para, index) => (
-              <FadeUp key={index} index={index}>
-                <p className="wf-prose-light">{para}</p>
-              </FadeUp>
-            ))}
+            <FadeUp>
+              <p className="wf-prose-light">{introText}</p>
+            </FadeUp>
+            <FadeUp index={1}>
+              <ul className="wf-prose-light wf-innovation-list">
+                {serviceItems.map((item, index) => (
+                  <li key={index} className="wf-innovation-list-item">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </FadeUp>
           </div>
         </div>
 
