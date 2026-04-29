@@ -79,11 +79,11 @@ export default function Footer() {
                 ))}
               </div>
 
-              {/* Contact col */}
+              {/* Contact col 
               <div className="wf-ft-col">
                 <p className="wf-ft-col-label">Contact</p>
                 <a href="mailto:connect@jazarift.vc" className="wf-ft-contact-link">connect@jazarift.vc</a>
-              </div>
+              </div>*/}
 
             </div>
           </div>
