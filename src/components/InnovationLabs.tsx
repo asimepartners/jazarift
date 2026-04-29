@@ -17,7 +17,7 @@ export default function InnovationLabs() {
     <AnimatedSection id="innovation-lab" className="wf-band-dark wf-innovation-labs">
       <div className="container">
         <div className="wf-section-eyebrow-row wf-eyebrow-dark">
-          <span className="wf-eyebrow">Global Health Innovations</span>
+          <span className="wf-eyebrow">Innovation Lab</span>
           <div className="wf-hr wf-hr-dark" />
         </div>
 
