@@ -119,6 +119,25 @@ a { text-decoration: none; color: inherit; }
 
 .wf-eyebrow-dark .wf-eyebrow { color: var(--jz-yellow); }
 
+#ventures .wf-eyebrow,
+#thesis .wf-eyebrow,
+#innovation-lab .wf-eyebrow,
+#portfolio .wf-eyebrow,
+#insights .wf-eyebrow,
+.wf-conveyor-embedded .wf-eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+}
+
+#ventures .wf-display,
+#thesis .wf-display,
+#innovation-lab .wf-display,
+#portfolio .wf-display,
+#insights .wf-display,
+.wf-conveyor-embedded .wf-display {
+  font-size: clamp(2.5rem, 5vw, 4.1rem);
+}
+
 /* ── 5. Nav ─────────────────────────────────────────────────── */
 .wf-nav {
   padding: 0.6rem 0;

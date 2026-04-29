@@ -105,6 +105,60 @@ export const thesisAreas: ThesisArea[] = [
   },
 ];
 
+export const investmentThesisAreas: ThesisArea[] = [
+  {
+    icon: "🤖",
+    title: "Digitial Health",
+    description:
+      "Software developed to solve a healthcare challenge. Convergence of health and tech to improve delivery and outcomes. Essentially Digital solutions (not hardware or physical assets), including insuretech, fintech for health etc.",
+  },
+  {
+    icon: "🌿",
+    title: "Medtech",
+    description:
+      "Medical technologies are products or solutions (ideally with services) used to save and improve people’s lives, by preventing, diagnosing, monitoring, treating and caring for diseases (- at every phase of the patient pathway).",
+  },
+  {
+    icon: "♀",
+    title: "Biotech / Techbio",
+    description:
+      "Biotech uses living organisms and biological systems to create products and services. TechBio integrates cutting-edge technologies, like AI, big data analytics, nanotechnology, and robotics, with biological sciences to develop innovative solutions.",
+  },
+  {
+    icon: "♿",
+    title: "Assistive Technologies",
+    description:
+      "Inclusive healthcare innovations for people living with disabilities across the continent. Services or products ranging from physical products to digital solutions that help people who have difficulty speaking, typing, writing, remembering, pointing, seeing, hearing, learning, walking, and many other things.",
+  },
+];
+
+export const globalHealthInnovationAreas: ThesisArea[] = [
+  {
+    icon: "🤖",
+    title: "Venture Studio & Venture Builder",
+    description:
+      "Jaza Rift Innovation Lab is a venture studio, startup studio or venture builder that creates from scratch startups by leveraging proven platform business models, tech innovation, and strategic partnerships. Compared to traditional investment and startup creation approaches, venture studios give 44% better results when it comes to the success rate of startups built - 84% of startups coming out of studios make it to the seed round while 72% reach Series A funding. Are you interested in funding any of the above services or benefiting from those for your own companies? Reach out to us via the form: tinyurl.com/jazabuild.",
+  },
+  {
+    icon: "🌿",
+    title: "Launchpad into Africa",
+    description:
+      "We support startups (digital health, medtech, biotech, assistive tech etc.) and global corporations (life sciences, bio & pharma) considering launching, testing and expanding innovations or inventions that would suit Africa’s need for affordable, quality and accessible healthcare solutions that are adapted to our resource constrained (energy, data) environment. If you’re from Kenya and want to launch in Ghana, we can provide you with a landing office, incorporation and regulatory support, access to network and financial management services to fast track your scaling. We welcome partnerships to expand the scope of solutions both locally and globally developed. We would provide a soft landing, working space and a network of potential partners across Africa.",
+  },
+  {
+    icon: "♀",
+    title: "Corporate VC as a Service",
+    description:
+      "As a Corporate VC as Service, Jaza Rift provides its expertise in digital health, medtech and biotech investments to any African or international entity that needs to find new innovations and develop new technologies targeting Africa. We will do all the heavy lifting on deal sourcing and analysis while you will take all of the investment decisions according to our agreed mandate. We know that either you do not want to set up your own corporate venture capital (CVC) unit in house (which can be very challenging) or you are ready to hand over your current CVC activities to an external VC, for one or more of the following reasons: 1) you don’t want to build a big team (a small team is, however, still required); 2) you want to keep all your focus on collaborating and building business, rather than getting distracted by financial management and fiduciary duties in start-ups.; 3) you know that building up expertise takes time and is costly. Doing it with us is faster and cheaper; and 4) maintaining a dedicated team is difficult and therefore working with us also means tapping into our built-up networks across Africa. Reach out to us for information.",
+  },
+  {
+    icon: "♿",
+    title: "Strategic Innovation",
+    description:
+      "We partner with all parties, including start-ups, academic institutions, business partners and local governments, while nurturing your employees’ innovative mindsets and capabilities for win-win results. We can execute hackathons, ideation labs, human-centered design and lean innovation to bring internal ideas to market facing innovations. We can support initiatives to encourage employees to submit and further develop their ideas for new products or business opportunities that will ultimately benefit you. We leverage both your internal network of experts and our own to explore unique solutions for specific problems and allow innovators to expand their network and raise capital.",
+  },
+];
+
 /* ── Healthcare Platform ───────────────────────────────────────── */
 
 export const conveyorSteps: ConveyorStep[] = [

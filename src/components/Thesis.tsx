@@ -1,7 +1,7 @@
 import { HugeiconsIcon } from '@hugeicons/react'
 import { AiBrain01Icon, Leaf01Icon, ManWomanIcon, WheelchairIcon } from '@hugeicons/core-free-icons'
 import type { IconSvgElement } from '@hugeicons/react'
-import { thesisIntro, thesisAreas } from '@/data/content'
+import { investmentThesisAreas, thesisIntro } from '@/data/content'
 import { AnimatedSection, FadeUp, SlideRight, StaggerParent, StaggerItem, motion } from './Motion'
 import Framework from './Framework'
 
@@ -40,7 +40,7 @@ export default function Thesis() {
 
         {/* Area cards */}
         <StaggerParent className="row g-4 mt-5 pt-lg-3">
-          {thesisAreas.map((area, i) => (
+          {investmentThesisAreas.map((area, i) => (
             <StaggerItem key={area.title} index={i} className="col-md-6 col-lg-3">
               <motion.div
                 className="wf-card-minimal"

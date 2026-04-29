@@ -1,7 +1,7 @@
 import { HugeiconsIcon } from '@hugeicons/react'
 import { AiBrain01Icon, Leaf01Icon, ManWomanIcon, WheelchairIcon } from '@hugeicons/core-free-icons'
 import type { IconSvgElement } from '@hugeicons/react'
-import { thesisIntro, thesisAreas } from '@/data/content'
+import { globalHealthInnovationAreas, thesisIntro } from '@/data/content'
 import { AnimatedSection, FadeUp, SlideRight, StaggerParent, StaggerItem, motion } from './Motion'
 import ConveyorBelt from './ConveyorBelt'
 
@@ -37,8 +37,8 @@ export default function InnovationLabs() {
         </div>
 
         <StaggerParent className="row g-4 mt-5 pt-lg-3">
-          {thesisAreas.map((area, index) => (
-            <StaggerItem key={`${area.title}-innovation`} index={index} className="col-md-6 col-lg-3">
+          {globalHealthInnovationAreas.map((area, index) => (
+            <StaggerItem key={`${area.title}-innovation`} index={index} className="col-md-6 col-lg-6">
               <motion.div
                 className="wf-card-minimal wf-card-minimal-dark"
                 whileHover={{ y: -5, scale: 1.02 }}
