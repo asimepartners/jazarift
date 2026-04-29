@@ -108,7 +108,7 @@ export const thesisAreas: ThesisArea[] = [
 export const investmentThesisAreas: ThesisArea[] = [
   {
     icon: "🤖",
-    title: "Digitial Health",
+    title: "Digital Health",
     description:
       "Software developed to solve a healthcare challenge. Convergence of health and tech to improve delivery and outcomes. Essentially Digital solutions (not hardware or physical assets), including insuretech, fintech for health etc.",
   },
