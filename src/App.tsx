@@ -19,8 +19,8 @@ export default function App() {
       <main>
         <Hero />
         <WhatWeDo />
-        <Advisory />
         <Thesis />
+        <Advisory />
         <HowWeInvest />
         <InnovationLabs />
         <Portfolio />
