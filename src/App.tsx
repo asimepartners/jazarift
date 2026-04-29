@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import WhatWeDo from './components/WhatWeDo'
+import Advisory from './components/Advisory'
 import Thesis from './components/Thesis'
 import HowWeInvest from './components/HowWeInvest'
 import InnovationLabs from './components/InnovationLabs'
@@ -18,6 +19,7 @@ export default function App() {
       <main>
         <Hero />
         <WhatWeDo />
+        <Advisory />
         <Thesis />
         <HowWeInvest />
         <InnovationLabs />

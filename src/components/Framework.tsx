@@ -15,7 +15,7 @@ interface FrameworkProps {
 
 export default function Framework({ embedded = false }: FrameworkProps) {
   const content = (
-    <div id="framework" className={embedded ? 'wf-framework-embedded' : undefined}>
+    <div id={embedded ? undefined : 'framework'} className={embedded ? 'wf-framework-embedded' : undefined}>
       {embedded ? null : (
         <div className="wf-section-eyebrow-row">
           <span className="wf-eyebrow">Our Framework</span>

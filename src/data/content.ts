@@ -308,28 +308,40 @@ export const threeTs: FrameworkDetail[] = [
 
 export const diligenceCards = [
   {
-    label: "Transaction Advisory Solutions",
-    title: "Due Diligence",
+    label: "Agentic World",
+    title: "AI Systems & Workflow Automation",
     description:
-      "Risk assessment and mitigation, market analysis, legal and regulatory checks all contextualized for the unique challenges of African markets. Our Investment Committee advises on technology fit, business model, and thesis alignment.",
+      "We provide AI systems and workflow automation for SMEs and startups. We deploy intelligent AI agents that connect departments, automate complex tasks, and work continuously to drive unprecedented efficiency and innovation. Our AI systems include: AI Chatbots, AI Marketing Automation, AI No-Code Workflows, AI Data Governance, and AI Cloud Credits. We work with SMEs and Startups to identify the specific needs of the organization and develop a customized plan to meet those needs.",
   },
   {
-    label: "Value over Price",
-    title: "Financial Modelling & Independent Valuation",
+    label: "Information Asymmetry",
+    title: "Due Diligence and Investment Analysis",
     description:
-      "Financial Modelling and Valuation: investment decisions grounded in local data content, expertise and AI.",
+      "Our team of experts conducts comprehensive due diligence to assess potential investments. This involves risk assessment and mitigation, market analysis, as well as legal and regulatory checks. Our advisors provide essential information to enable informed investment decisions, minimizing risks and ensuring alignment with the unique needs and challenges of the African market.",
   },
   {
-    label: "Impact Measurement",
-    title: "Depth, Breadth and Scale of Impact",
+    label: "Financial Engineering",
+    title: "Investment Structuring & Financial Modelling",
     description:
-      "We also provide impact management and measurement services aligned with UN SDGs, GIIN, and IRIS+ standards.",
+      "Focused on providing healthcare-specific advice, we help private equity and venture capital firms efficiently structure their investments, optimizing debt and equity components, evaluating mixed capital structures, and ensuring informed decisions through in-depth financial modeling & analysis. We also provide independent financial modeling and advice to startups and SMEs.",
   },
   {
     label: "Market Entry",
-    title: "Where and How to Scale in Africa",
+    title: "Independent Valuation",
     description:
-      "With our extensive networks across Africa, we advise both local and international healthcare companies on how to navigate regulatory challenges and grow across key healthcare markets in Africa.",
+      "We offer independent valuation services using various methods to determine the fair market value of venture capital, private equity and strategic investments, only in healthcare. With our team of legal and tax partners, we also provide opinions to ensure investment terms are reasonable, equitable, transparent and fair.",
+  },
+  {
+    label: "Negotiation Fairness",
+    title: "Buy/Sell Side Support",
+    description:
+      "We assist clients in identifying potential targets or buyers, negotiate terms, manage due diligence, and facilitate the structuring and execution of transactions. This ensures that the transactions are well-aligned with the goals of private equity and later stage venture capital firms while navigating the complexities of the African business landscape.",
+  },
+  {
+    label: "Theory of Change",
+    title: "Impact Management and Measurement",
+    description:
+      "Upon specific request, we provide impact management and measurement services in alignment with the UN SDGs and international standards such as GIIN, IRIS etc. for investment companies and healthcare organizations. We ensure full consideration of clients theory of change, impact framework and alignment to best practices (including theory of change, log frames etc.)",
   },
 ];
 

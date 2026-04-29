@@ -795,6 +795,39 @@ a { text-decoration: none; color: inherit; }
   color: #5f6b7a;
 }
 
+.wf-advisory-section {
+  padding-top: 0;
+}
+
+#framework.wf-advisory-section .wf-display {
+  font-size: clamp(2.35rem, 4.7vw, 3.9rem);
+}
+
+.wf-advisory-shell {
+  padding: 2.4rem 2.5rem;
+  background: #f6f7fb;
+}
+
+.wf-advisory-title {
+  max-width: 620px;
+  line-height: 1.04;
+}
+
+.wf-advisory-prose {
+  max-width: 640px;
+  color: #4d5765;
+}
+
+.wf-advisory-section .wf-diligence-card {
+  padding: 2.35rem 2.15rem;
+}
+
+.wf-advisory-section .wf-eyebrow {
+  font-size: 0.92rem;
+  letter-spacing: 0.11em;
+  color: rgba(84, 114, 221, 0.8);
+}
+
 /* ── 9b. What We Do — Three Pillars ────────────────────────── */
 .wf-whatwedo {
   background: var(--jz-off);
@@ -1559,6 +1592,10 @@ a { text-decoration: none; color: inherit; }
   .wf-hero-stat-cell { flex: 0 0 50%; max-width: none; }
   .wf-hero-stat-cell + .wf-hero-stat-cell::before { display: none; }
 
+  .wf-advisory-shell {
+    padding: 2rem 1.5rem;
+  }
+
   .wf-how-invest-shell {
     padding: 2rem 1.5rem;
   }
@@ -1649,6 +1686,10 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 575.98px) {
+  .wf-advisory-shell {
+    padding: 1.75rem 1.25rem;
+  }
+
   .wf-how-invest-shell {
     padding: 1.75rem 1.25rem;
   }
