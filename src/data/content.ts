@@ -105,6 +105,74 @@ export const thesisAreas: ThesisArea[] = [
   },
 ];
 
+export const investmentThesisAreas: ThesisArea[] = [
+  {
+    icon: "🤖",
+    title: "Digitial Health",
+    description:
+      "Software developed to solve a healthcare challenge. Convergence of health and tech to improve delivery and outcomes. Essentially Digital solutions (not hardware or physical assets), including insuretech, fintech for health etc.",
+  },
+  {
+    icon: "🌿",
+    title: "Medtech",
+    description:
+      "Medical technologies are products or solutions (ideally with services) used to save and improve people’s lives, by preventing, diagnosing, monitoring, treating and caring for diseases (- at every phase of the patient pathway).",
+  },
+  {
+    icon: "♀",
+    title: "Biotech / Techbio",
+    description:
+      "Biotech uses living organisms and biological systems to create products and services. TechBio integrates cutting-edge technologies, like AI, big data analytics, nanotechnology, and robotics, with biological sciences to develop innovative solutions.",
+  },
+  {
+    icon: "♿",
+    title: "Assistive Technologies",
+    description:
+      "Inclusive healthcare innovations for people living with disabilities across the continent. Services or products ranging from physical products to digital solutions that help people who have difficulty speaking, typing, writing, remembering, pointing, seeing, hearing, learning, walking, and many other things.",
+  },
+];
+
+export const globalHealthInnovationAreas: ThesisArea[] = [
+  {
+    icon: "🤖",
+    title: "Venture Studio & Venture Builder",
+    description:
+      "Jaza Rift Innovation Lab is a venture studio, startup studio or venture builder that creates from scratch startups by leveraging proven platform business models, tech innovation, and strategic partnerships. Compared to traditional investment and startup creation approaches, venture studios give 44% better results when it comes to the success rate of startups built - 84% of startups coming out of studios make it to the seed round while 72% reach Series A funding. Are you interested in funding any of the above services or benefiting from those for your own companies? Reach out to us via the form: tinyurl.com/jazabuild.",
+  },
+  {
+    icon: "🌿",
+    title: "Launchpad into Africa",
+    description:
+      "We support startups (digital health, medtech, biotech, assistive tech etc.) and global corporations (life sciences, bio & pharma) considering launching, testing and expanding innovations or inventions that would suit Africa’s need for affordable, quality and accessible healthcare solutions that are adapted to our resource constrained (energy, data) environment. If you’re from Kenya and want to launch in Ghana, we can provide you with a landing office, incorporation and regulatory support, access to network and financial management services to fast track your scaling. We welcome partnerships to expand the scope of solutions both locally and globally developed. We would provide a soft landing, working space and a network of potential partners across Africa.",
+  },
+  {
+    icon: "♀",
+    title: "Corporate VC as a Service",
+    description:
+      "As a Corporate VC as Service, Jaza Rift provides its expertise in digital health, medtech and biotech investments to any African or international entity that needs to find new innovations and develop new technologies targeting Africa. We will do all the heavy lifting on deal sourcing and analysis while you will take all of the investment decisions according to our agreed mandate. We know that either you do not want to set up your own corporate venture capital (CVC) unit in house (which can be very challenging) or you are ready to hand over your current CVC activities to an external VC, for one or more of the following reasons: 1) you don’t want to build a big team (a small team is, however, still required); 2) you want to keep all your focus on collaborating and building business, rather than getting distracted by financial management and fiduciary duties in start-ups.; 3) you know that building up expertise takes time and is costly. Doing it with us is faster and cheaper; and 4) maintaining a dedicated team is difficult and therefore working with us also means tapping into our built-up networks across Africa. Reach out to us for information.",
+  },
+  {
+    icon: "♿",
+    title: "Strategic Innovation",
+    description:
+      "We partner with all parties, including start-ups, academic institutions, business partners and local governments, while nurturing your employees’ innovative mindsets and capabilities for win-win results. We can execute hackathons, ideation labs, human-centered design and lean innovation to bring internal ideas to market facing innovations. We can support initiatives to encourage employees to submit and further develop their ideas for new products or business opportunities that will ultimately benefit you. We leverage both your internal network of experts and our own to explore unique solutions for specific problems and allow innovators to expand their network and raise capital.",
+  },
+];
+
+export const innovationLabsIntro = {
+  body: [
+    "The innovation lab offers services ranging from:",
+    "Ideation as a Service: human centered design frameworks to test and validate new healthcare or accessibility business ideas with rapid prototyping innovation workshops.",
+    "Design as a Service: an internal or outsourced design team whenever you need it for all your UX/UI, brand identity and pitch deck designs.",
+    "Capital raising as a Service: Fundraising strategy, process, and workshop to help you secure early-stage investments and grant funding for your startup.",
+    "AI & Engineering as a Service: a product development team to build and launch MVP for non-technical founders. And an AI / ML & Data Science team to facilitate and enable AI & ML into your startup.",
+    "Marketing & Branding as a Service: tailored solution that supports your marketing and branding functions on-demand, from strategy development to execution.",
+    "Legal & Tax as a Service: company creation, company secretary, structure, operating agreements, tax and compliance advisory on-demand.",
+    "CFO as a Service: get fractional CFO (not accounting) support with management and board reporting (budget vs. actual variance analysis and insights, business KPI analysis & reporting and profitability analysis), budgeting and reporting, funding strategy and support and even custom CFO Engagement.",
+    "Scale-up as a Service: in partnership with a leading tech platform, playbooks (including the Growth Academy) enables scale readiness assessment, scale methodology and coaching/mentoring to help scale 10x innovations and inventions.",
+  ],
+};
+
 /* ── Healthcare Platform ───────────────────────────────────────── */
 
 export const conveyorSteps: ConveyorStep[] = [
@@ -240,28 +308,40 @@ export const threeTs: FrameworkDetail[] = [
 
 export const diligenceCards = [
   {
-    label: "Transaction Advisory Solutions",
-    title: "Due Diligence",
+    label: "Agentic World",
+    title: "AI Systems & Workflow Automation",
     description:
-      "Risk assessment and mitigation, market analysis, legal and regulatory checks all contextualized for the unique challenges of African markets. Our Investment Committee advises on technology fit, business model, and thesis alignment.",
+      "We provide AI systems and workflow automation for SMEs and startups. We deploy intelligent AI agents that connect departments, automate complex tasks, and work continuously to drive unprecedented efficiency and innovation. Our AI systems include: AI Chatbots, AI Marketing Automation, AI No-Code Workflows, AI Data Governance, and AI Cloud Credits. We work with SMEs and Startups to identify the specific needs of the organization and develop a customized plan to meet those needs.",
   },
   {
-    label: "Value over Price",
-    title: "Financial Modelling & Independent Valuation",
+    label: "Information Asymmetry",
+    title: "Due Diligence and Investment Analysis",
     description:
-      "Financial Modelling and Valuation: investment decisions grounded in local data content, expertise and AI.",
+      "Our team of experts conducts comprehensive due diligence to assess potential investments. This involves risk assessment and mitigation, market analysis, as well as legal and regulatory checks. Our advisors provide essential information to enable informed investment decisions, minimizing risks and ensuring alignment with the unique needs and challenges of the African market.",
   },
   {
-    label: "Impact Measurement",
-    title: "Depth, Breadth and Scale of Impact",
+    label: "Financial Engineering",
+    title: "Investment Structuring & Financial Modelling",
     description:
-      "We also provide impact management and measurement services aligned with UN SDGs, GIIN, and IRIS+ standards.",
+      "Focused on providing healthcare-specific advice, we help private equity and venture capital firms efficiently structure their investments, optimizing debt and equity components, evaluating mixed capital structures, and ensuring informed decisions through in-depth financial modeling & analysis. We also provide independent financial modeling and advice to startups and SMEs.",
   },
   {
     label: "Market Entry",
-    title: "Where and How to Scale in Africa",
+    title: "Independent Valuation",
     description:
-      "With our extensive networks across Africa, we advise both local and international healthcare companies on how to navigate regulatory challenges and grow across key healthcare markets in Africa.",
+      "We offer independent valuation services using various methods to determine the fair market value of venture capital, private equity and strategic investments, only in healthcare. With our team of legal and tax partners, we also provide opinions to ensure investment terms are reasonable, equitable, transparent and fair.",
+  },
+  {
+    label: "Negotiation Fairness",
+    title: "Buy/Sell Side Support",
+    description:
+      "We assist clients in identifying potential targets or buyers, negotiate terms, manage due diligence, and facilitate the structuring and execution of transactions. This ensures that the transactions are well-aligned with the goals of private equity and later stage venture capital firms while navigating the complexities of the African business landscape.",
+  },
+  {
+    label: "Theory of Change",
+    title: "Impact Management and Measurement",
+    description:
+      "Upon specific request, we provide impact management and measurement services in alignment with the UN SDGs and international standards such as GIIN, IRIS etc. for investment companies and healthcare organizations. We ensure full consideration of clients theory of change, impact framework and alignment to best practices (including theory of change, log frames etc.)",
   },
 ];
 

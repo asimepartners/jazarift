@@ -1,7 +1,7 @@
 import { HugeiconsIcon } from '@hugeicons/react'
 import { AiBrain01Icon, Leaf01Icon, ManWomanIcon, WheelchairIcon } from '@hugeicons/core-free-icons'
 import type { IconSvgElement } from '@hugeicons/react'
-import { thesisIntro, thesisAreas } from '@/data/content'
+import { investmentThesisAreas, thesisIntro } from '@/data/content'
 import { AnimatedSection, FadeUp, SlideRight, StaggerParent, StaggerItem, motion } from './Motion'
 import Framework from './Framework'
 
@@ -13,6 +13,11 @@ const thesisIcons: IconSvgElement[] = [
 ]
 
 export default function Thesis() {
+  const introParagraphs = thesisIntro.body.filter((item) => !item.startsWith('>'))
+  const criteriaItems = thesisIntro.body
+    .filter((item) => item.startsWith('>'))
+    .map((item) => item.replace(/^>\s*/, ''))
+
   return (
     <AnimatedSection id="thesis" className="wf-section">
       <div className="container">
@@ -30,17 +35,26 @@ export default function Thesis() {
             </SlideRight>
           </div>
           <div className="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
-            {thesisIntro.body.map((para, i) => (
+            {introParagraphs.map((para, i) => (
               <FadeUp key={i} index={i}>
                 <p className="wf-prose">{para}</p>
               </FadeUp>
             ))}
+            <FadeUp index={introParagraphs.length}>
+              <ul className="wf-prose wf-thesis-list">
+                {criteriaItems.map((item, index) => (
+                  <li key={index} className="wf-thesis-list-item">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </FadeUp>
           </div>
         </div>
 
         {/* Area cards */}
         <StaggerParent className="row g-4 mt-5 pt-lg-3">
-          {thesisAreas.map((area, i) => (
+          {investmentThesisAreas.map((area, i) => (
             <StaggerItem key={area.title} index={i} className="col-md-6 col-lg-3">
               <motion.div
                 className="wf-card-minimal"

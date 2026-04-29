@@ -1,7 +1,7 @@
 import { HugeiconsIcon } from '@hugeicons/react'
 import { AiBrain01Icon, Leaf01Icon, ManWomanIcon, WheelchairIcon } from '@hugeicons/core-free-icons'
 import type { IconSvgElement } from '@hugeicons/react'
-import { thesisIntro, thesisAreas } from '@/data/content'
+import { globalHealthInnovationAreas, innovationLabsIntro } from '@/data/content'
 import { AnimatedSection, FadeUp, SlideRight, StaggerParent, StaggerItem, motion } from './Motion'
 import ConveyorBelt from './ConveyorBelt'
 
@@ -13,11 +13,13 @@ const innovationIcons: IconSvgElement[] = [
 ]
 
 export default function InnovationLabs() {
+  const [introText, ...serviceItems] = innovationLabsIntro.body
+
   return (
     <AnimatedSection id="innovation-lab" className="wf-band-dark wf-innovation-labs">
       <div className="container">
         <div className="wf-section-eyebrow-row wf-eyebrow-dark">
-          <span className="wf-eyebrow">Innovation Lab</span>
+          <span className="wf-eyebrow">Global Health Innovations</span>
           <div className="wf-hr wf-hr-dark" />
         </div>
 
@@ -28,17 +30,24 @@ export default function InnovationLabs() {
             </SlideRight>
           </div>
           <div className="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
-            {thesisIntro.body.map((para, index) => (
-              <FadeUp key={index} index={index}>
-                <p className="wf-prose-light">{para}</p>
-              </FadeUp>
-            ))}
+            <FadeUp>
+              <p className="wf-prose-light">{introText}</p>
+            </FadeUp>
+            <FadeUp index={1}>
+              <ul className="wf-prose-light wf-innovation-list">
+                {serviceItems.map((item, index) => (
+                  <li key={index} className="wf-innovation-list-item">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </FadeUp>
           </div>
         </div>
 
         <StaggerParent className="row g-4 mt-5 pt-lg-3">
-          {thesisAreas.map((area, index) => (
-            <StaggerItem key={`${area.title}-innovation`} index={index} className="col-md-6 col-lg-3">
+          {globalHealthInnovationAreas.map((area, index) => (
+            <StaggerItem key={`${area.title}-innovation`} index={index} className="col-md-6 col-lg-6">
               <motion.div
                 className="wf-card-minimal wf-card-minimal-dark"
                 whileHover={{ y: -5, scale: 1.02 }}

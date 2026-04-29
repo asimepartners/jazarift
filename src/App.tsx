@@ -1,7 +1,9 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import WhatWeDo from './components/WhatWeDo'
+import Advisory from './components/Advisory'
 import Thesis from './components/Thesis'
+import HowWeInvest from './components/HowWeInvest'
 import InnovationLabs from './components/InnovationLabs'
 import Portfolio from './components/Portfolio'
 import Francophone from './components/Francophone'
@@ -18,6 +20,8 @@ export default function App() {
         <Hero />
         <WhatWeDo />
         <Thesis />
+        <Advisory />
+        <HowWeInvest />
         <InnovationLabs />
         <Portfolio />
         <Francophone />
