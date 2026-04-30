@@ -56,7 +56,7 @@ export interface FaqItem {
 export const heroContent = {
   headline: "Healthcare investment platform for Africa",
   subheadline:
-    "Pre-Seed to Series\u00A0A tech investments | Working Capital | Convertible Debt | Grant Funding | Tansaction Advisory | Strategic Market Entry | Buy & Sell Side | Global Health Partnerships",
+    "Investment Holding | Strategic Tansaction Advisory | Innovation Lab for Global Health Partnerships",
   ctaPrimary: { label: "Submit Your Proposal", href: "http://tinyurl.com/jazarift", target: "_blank" },
   ctaSecondary: { label: "Portfolio", href: "#portfolio" },
 };
