@@ -396,9 +396,9 @@ export const insights: InsightCard[] = [
 
 export const applyCta = {
   headline: "Transaction Advisory Services",
-  body: "African Healthcare SMEs and Scale Ups looking for $5M capital in debt, equity or quasi-equity, CFO services or AI Systems and workflow automation solutions.",
+  body: "African Healthcare SMEs and Scale Ups looking for $5M+ capital in debt, equity or quasi-equity, CFO services or AI Systems and workflow automation solutions.",
   buttonLabel: "Submit Your Proposal",
-  buttonHref: "http://tinyurl.com/jazarift",
+  buttonHref: "http://tinyurl.com/jazape",
   buttonTarget: "_blank",
 };
 
