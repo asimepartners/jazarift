@@ -71,7 +71,17 @@ export default function Thesis() {
           ))}
         </StaggerParent>
 
-        <Framework embedded />
+        <div className="wf-thesis-framework-block">
+          <FadeUp>
+            <h2 className="wf-display wf-thesis-framework-title">How We Invest</h2>
+          </FadeUp>
+          <FadeUp index={1}>
+            <p className="wf-prose wf-thesis-framework-copy">
+              We evaluate all investments through our 3Ts framework a rigorous but founder-friendly approach powered by our 4Cs.
+            </p>
+          </FadeUp>
+          <Framework embedded />
+        </div>
       </div>
     </AnimatedSection>
   )

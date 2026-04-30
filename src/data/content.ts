@@ -46,6 +46,11 @@ export interface Office {
   lines: string[];
 }
 
+export interface FaqItem {
+  question: string;
+  answer: string[];
+}
+
 /* ── Hero ────────────────────────────────────────────────── */
 
 export const heroContent = {
@@ -389,6 +394,72 @@ export const insights: InsightCard[] = [
     title: "Building the Deep Sector Expertise Network",
     description:
       "From oncology to radiology, Jaza Rift is assembling a gender-balanced network of investment and healthcare advisors across the full value chain.",
+  },
+];
+
+/* ── Questions ───────────────────────────────────────────── */
+
+export const faqItems: FaqItem[] = [
+  {
+    question: "What is your investment thesis?",
+    answer: [
+      "We back founders and teams using technology to solve large and meaningful problems across Africa.",
+      "We back African technology companies that are organising the offline online, digitizing key industries, and redefining the way Africans live, earn, work, and do business.",
+      "Our core thesis is driven by identifying verticals in Africa where the problems are large and meaningful, which can be solved commercially, and where technology is core.",
+      "We know the market is both misunderstood and overlooked, and with tailwinds of population growth, increasing internet penetration and falling data costs, rapidly developing infrastructure, strengthening governance and transparency, and a quickly emerging tech and venture ecosystem, we see significant opportunity in backing the teams leveraging technology to build the rails that will help drive Africa's exponential growth over the coming decades.",
+    ],
+  },
+  {
+    question: "At what stage do you invest?",
+    answer: [
+      "We are a multi-stage venture capital firm, meaning that we partner with you and invest from pre-seed through to Series B on our first check. For pre-seed investments, we typically invest in repeat founders with complete founding teams, and our intention is to continue investing over the lifecycles of company growth.",
+      "In addition to our core funds (Fund I & Fund II), we also run Enza Growth Capital, an evergreen investment vehicle that can invest up to $20m per company over longer holding periods than traditional venture funds.",
+    ],
+  },
+  {
+    question: "What are your key investment sectors?",
+    answer: [
+      "We are finding, backing, and helping to build African technology companies that are organising the offline online, digitizing key industries, and changing the way that Africans live, earn, work, and do business. Enza Capital leads and co-leads investments into category defining technology companies in the fintech, logistics, health, human capital, and climate smart sectors across Africa.",
+    ],
+  },
+  {
+    question: "What is your ticket size?",
+    answer: [
+      "Our first check ranges from $250k to $5m USD, with our typical sweet spot sitting between $500k - $2m USD. We have significant capacity to follow on from our core funds and through our Growth Capital vehicle, which can invest up to $20m USD per company.",
+    ],
+  },
+  {
+    question: "Do you follow on after your initial investment?",
+    answer: [
+      "We have a clear reserve policy and follow-on strategy where we reserve significant capital to follow on into portfolio companies we've already backed. Not every company will receive a follow-on investment.",
+      "From our Fund I we made at least one follow-on investment into 12 of the 23 companies that we backed. We also have a dedicated Growth Fund that can invest up to $20m per company in follow-on investments, this vehicle is reserved for existing Enza Capital portfolio companies that are on high growth trajectories and have a qualified demand for significant capital to scale.",
+    ],
+  },
+  {
+    question: "Do you lead investments?",
+    answer: [
+      "We prefer to lead investments and co-lead investments where it also fits the needs of the company. We will also participate in investment rounds with co-investors where we are not the lead investor in a smaller capacity.",
+      "We typically will lead an investment where we have strong conviction in the management team and the market opportunity, and where we can add value to this stage of your business. We do take Board and Observer seats in cases where we lead or co-lead the investment, however, at the earliest stage of company formation we know this is not always necessary.",
+    ],
+  },
+  {
+    question: "Do you co-invest?",
+    answer: [
+      "We are highly collaborative and actively seek co-investment opportunities given the range of high quality investors backing early-stage tech companies across Africa. The majority of the investments we make will be alongside funds and other backers who are aligned with the vision, values, and plan.",
+    ],
+  },
+  {
+    question: "How long is your investment process?",
+    answer: [
+      "Our investment process varies in length depending on a range of variables specific to the business and the investment. On average our process from first call to cash in the bank for a lead equity investment is approximately 2.5 months, however this timeline depends on the structure and nuances of the transaction, the responsiveness to requests, the quality of information provided, and the quality of lawyers supporting all parties.",
+      "Our fastest investment from start to finish has been in 2-weeks, however this is more of an exception rather than a rule. This is one of the reasons we advise companies to start building relationships and sharing information consistently before you need to fundraise, as it will typically shorten the length of the investment process.",
+    ],
+  },
+  {
+    question: "What criteria do you look for when making an investment decision?",
+    answer: [
+      "We look at a range of criteria when forming an investment decision, and this will change depending on the stage of the business. We focus heavily on the team, particularly at the earlier stages of a company lifecycle - this is the founding team, relevance to the market and problem being solved, proximity to market, and completeness. In addition to team we focus heavily on the problem being solved, the size of the market and opportunity, the validation, the technology, and the transaction. One of the key areas we spend time with our Founders is on working together to not only understand your fit for us, but our fit for you, which focuses on how we can help you and your company achieve the ambitious vision you've set out to achieve.",
+    ],
   },
 ];
 
