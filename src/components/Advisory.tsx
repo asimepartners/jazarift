@@ -3,7 +3,7 @@ import { AnimatedSection, FadeUp, StaggerParent, StaggerItem, motion } from './M
 
 const advisoryContent = {
   title: 'Strategic, financial & market entry advisory for healthcare',
-  body: 'Experience in both Francophone and Anglophone Africa. Business advisory services play an essential role in economic growth and development in Africa by facilitating strategic decision-making for private equity, venture capital firms, and business owners. We particularly support healthcare facilities, hospitals and specialized centers (dental, surgery, etc.) and pharmaceutical distribution companies raising $5M+ capital.',
+  body: 'Experience in both Francophone and Anglophone Africa. Business advisory services play an essential role in economic growth and development in Africa by facilitating strategic decision-making for private equity, venture capital firms, and business owners. We particularly support healthcare facilities, hospitals and specialized centers (dental, surgery, etc.) and pharmaceutical distribution companies raising $3M+ capital.',
 }
 
 export default function Advisory() {

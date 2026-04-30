@@ -9,7 +9,7 @@ export default function Questions() {
     <AnimatedSection id="questions" className="wf-qa-section">
       <div className="container">
         <FadeUp>
-          <h2 className="wf-qa-title">QUESTIONS</h2>
+          <h2 className="wf-qa-title">Q&A</h2>
         </FadeUp>
 
         <div className="wf-qa-list mt-5">

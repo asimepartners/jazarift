@@ -13,10 +13,11 @@ const thesisIcons: IconSvgElement[] = [
 ]
 
 export default function Thesis() {
-  const introParagraphs = thesisIntro.body.filter((item) => !item.startsWith('>'))
-  const criteriaItems = thesisIntro.body
-    .filter((item) => item.startsWith('>'))
-    .map((item) => item.replace(/^>\s*/, ''))
+  const criteriaPrefixes = ['Sector:', 'Stage:', 'Tickets:', 'Countries:']
+  const introParagraphs = thesisIntro.body.filter(
+    (item) => !criteriaPrefixes.some((prefix) => item.startsWith(prefix)),
+  )
+  const criteriaItems = thesisIntro.body.filter((item) => criteriaPrefixes.some((prefix) => item.startsWith(prefix)))
 
   return (
     <AnimatedSection id="thesis" className="wf-section">
@@ -40,15 +41,17 @@ export default function Thesis() {
                 <p className="wf-prose">{para}</p>
               </FadeUp>
             ))}
-            <FadeUp index={introParagraphs.length}>
-              <ul className="wf-prose wf-thesis-list">
-                {criteriaItems.map((item, index) => (
-                  <li key={index} className="wf-thesis-list-item">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </FadeUp>
+            {criteriaItems.length > 0 ? (
+              <FadeUp index={introParagraphs.length}>
+                <ul className="wf-prose wf-thesis-list">
+                  {criteriaItems.map((item, index) => (
+                    <li key={index} className="wf-thesis-list-item">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </FadeUp>
+            ) : null}
           </div>
         </div>
 

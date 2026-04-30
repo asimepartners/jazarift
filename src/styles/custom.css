@@ -806,6 +806,19 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 0;
 }
 
+.wf-innovation-service-card {
+  min-height: 100%;
+}
+
+.wf-innovation-service-title {
+  min-height: 3rem;
+  margin-top: 0;
+}
+
+.wf-innovation-service-body {
+  margin-bottom: 0;
+}
+
 .wf-conveyor-embedded {
   margin-top: 6rem;
   padding-top: 5rem;
@@ -850,8 +863,12 @@ a { text-decoration: none; color: inherit; }
 }
 
 .wf-how-invest-shell {
-  padding: 2.25rem 2.4rem;
+  padding: 2.25rem 2.4rem 1rem;
   background: var(--jz-white);
+}
+
+.wf-how-invest-cards {
+  margin-top: 0.5rem;
 }
 
 .wf-how-invest-title {
@@ -869,7 +886,8 @@ a { text-decoration: none; color: inherit; }
 .wf-how-invest-card {
   height: 100%;
   padding: 2.25rem 2.3rem 2rem;
-  border-left: 1px solid rgba(15,23,42,0.08);
+  border: 1px solid rgba(15,23,42,0.16);
+  border-radius: 20px;
   background: var(--jz-white);
 }
 
@@ -1834,7 +1852,7 @@ a { text-decoration: none; color: inherit; }
   }
 
   .wf-how-invest-shell {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0.85rem;
   }
 
   .wf-pillars { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
@@ -1875,8 +1893,7 @@ a { text-decoration: none; color: inherit; }
 
   .wf-how-invest-card {
     padding: 1.95rem 1.6rem;
-    border-left: none;
-    border-top: 1px solid rgba(15,23,42,0.08);
+    border: 1px solid rgba(15,23,42,0.16);
   }
 
   .wf-conveyor-row {

@@ -166,7 +166,7 @@ export const globalHealthInnovationAreas: ThesisArea[] = [
 
 export const innovationLabsIntro = {
   body: [
-    "The innovation lab offers services ranging from:",
+    "Africa's youthful population median age 18 holds immense potential to design new healthcare solutions fit for the market. Yet startups consistently fall through the gap between early incubation and later-stage funding. In parallel, healthcare SMEs face working capital and growth equity shortages to scale and grow their businesses. Jaza Rift fills those gaps. In partnership with leading thought stakeholders, we've built a seamless pipeline: from research to commercialisation, idea to market, and scale in multiple countries, no other organisation in Africa offers this end-to-end continuity for healthcare investments as a platform to scale across Africa.",
     "Ideation as a Service: human centered design frameworks to test and validate new healthcare or accessibility business ideas with rapid prototyping innovation workshops.",
     "Design as a Service: an internal or outsourced design team whenever you need it for all your UX/UI, brand identity and pitch deck designs.",
     "Capital raising as a Service: Fundraising strategy, process, and workshop to help you secure early-stage investments and grant funding for your startup.",
@@ -447,12 +447,6 @@ export const faqItems: FaqItem[] = [
     answer: [
       "Our investment process is very dependent on variables specific to you and the investment (see our 3Ts). On average our process from first call to cash in the bank for an equity investment is approximately 4 months. However this timeline hinges on the structure and nuances of the transaction, the responsiveness to requests, the quality of information provided, and the quality of lawyers supporting all parties.",
       "Our fastest investment from start to finish has been in 2-weeks, however this is more of an exception rather than a rule. This is one of the reasons we advise companies to start building relationships and sharing information consistently before you need to fundraise, as it will typically shorten the length of the investment process.",
-    ],
-  },
-  {
-    question: "What criteria do you look for when making an investment decision?",
-    answer: [
-      "We look at a range of criteria when forming an investment decision, and this will change depending on the stage of the business. We focus heavily on the team, particularly at the earlier stages of a company lifecycle - this is the founding team, relevance to the market and problem being solved, proximity to market, and completeness. In addition to team we focus heavily on the problem being solved, the size of the market and opportunity, the validation, the technology, and the transaction. One of the key areas we spend time with our Founders is on working together to not only understand your fit for us, but our fit for you, which focuses on how we can help you and your company achieve the ambitious vision you've set out to achieve.",
     ],
   },
 ];
