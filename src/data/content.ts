@@ -56,7 +56,7 @@ export interface FaqItem {
 export const heroContent = {
   headline: "Healthcare investment platform for Africa",
   subheadline:
-    "Investment Holding | Strategic Tansaction Advisory | Innovation Lab for Global Health Partnerships",
+    "Investments | Transaction Advisory | Global Health Innovation Lab",
   ctaPrimary: { label: "Submit Your Proposal", href: "http://tinyurl.com/jazarift", target: "_blank" },
   ctaSecondary: { label: "Portfolio", href: "#portfolio" },
 };
