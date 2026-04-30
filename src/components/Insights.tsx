@@ -16,7 +16,7 @@ const platformCards = [
     ),
   },
   {
-    label: 'Leadership Articles & Research',
+    label: 'Articles & Research',
     title: 'Interact with us on LinkedIn',
     href: 'https://linkedin.com/company/jazarift/posts',
     description: 'Follow our updates, perspectives, ecosystem highlights, and transaction advisory insights across Africa’s health innovation landscape.',
