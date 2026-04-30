@@ -3,7 +3,7 @@ import { AnimatedSection, FadeUp, StaggerParent, StaggerItem, motion } from './M
 const platformCards = [
   {
     label: 'Blog & Deep Research',
-    title: 'Substack',
+    title: 'Subscribe to our newsletter and deep research on Substack',
     href: 'https://jazarift.substack.com',
     description: 'Read long-form essays, sector analysis, and founder-focused thinking on African healthcare innovation from the Jaza Rift ecosystem.',
     icon: (
@@ -17,7 +17,7 @@ const platformCards = [
   },
   {
     label: 'Leadership Articles & Research',
-    title: 'LinkedIn',
+    title: 'Follow and interact with us on LinkedIn',
     href: 'https://linkedin.com/company/jazarift/posts',
     description: 'Follow our updates, perspectives, ecosystem highlights, and transaction advisory insights across Africa’s health innovation landscape.',
     icon: (
@@ -32,7 +32,7 @@ const platformCards = [
   },
   {
     label: 'Podcasts & Interviews',
-    title: 'YouTube',
+    title: 'Watch our videos on YouTube',
     href: 'https://youtube.com/@jazarift',
     description: 'Watch interviews, market explainers, founder conversations, and practical video content on African healthcare innovation and capital.',
     icon: (
