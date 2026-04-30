@@ -1,5 +1,5 @@
 import { HugeiconsIcon } from '@hugeicons/react'
-import { AiBrain01Icon, Leaf01Icon, ManWomanIcon, WheelchairIcon } from '@hugeicons/core-free-icons'
+import { AiBrain01Icon, AiBrain05Icon, Leaf01Icon, ManWomanIcon } from '@hugeicons/core-free-icons'
 import type { IconSvgElement } from '@hugeicons/react'
 import { thesisAreas } from '@/data/content'
 import { AnimatedSection, FadeUp, StaggerParent, StaggerItem } from './Motion'
@@ -8,7 +8,7 @@ const investIcons: IconSvgElement[] = [
   AiBrain01Icon,
   Leaf01Icon,
   ManWomanIcon,
-  WheelchairIcon,
+  AiBrain05Icon,
 ]
 
 export default function HowWeInvest() {
@@ -30,7 +30,7 @@ export default function HowWeInvest() {
           </div>
         </div>
 
-        <StaggerParent className="row g-4 mt-3">
+        <StaggerParent className="row g-4 wf-how-invest-cards">
           {thesisAreas.map((area, index) => (
             <StaggerItem key={`${area.title}-how-we-invest`} index={index} className="col-md-6 col-xl-6">
               <article className="wf-how-invest-card">

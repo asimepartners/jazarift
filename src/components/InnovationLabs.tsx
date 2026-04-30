@@ -1,19 +1,34 @@
 import { HugeiconsIcon } from '@hugeicons/react'
-import { AiBrain01Icon, Leaf01Icon, ManWomanIcon, WheelchairIcon } from '@hugeicons/core-free-icons'
+import { AiIdeaIcon, AiInnovation01Icon, AiNetworkIcon, Briefcase01Icon } from '@hugeicons/core-free-icons'
 import type { IconSvgElement } from '@hugeicons/react'
 import { globalHealthInnovationAreas, innovationLabsIntro } from '@/data/content'
 import { AnimatedSection, FadeUp, SlideRight, StaggerParent, StaggerItem, motion } from './Motion'
 import ConveyorBelt from './ConveyorBelt'
 
 const innovationIcons: IconSvgElement[] = [
-  AiBrain01Icon,
-  Leaf01Icon,
-  ManWomanIcon,
-  WheelchairIcon,
+  AiInnovation01Icon,
+  AiNetworkIcon,
+  Briefcase01Icon,
+  AiIdeaIcon,
 ]
 
 export default function InnovationLabs() {
   const [introText, ...serviceItems] = innovationLabsIntro.body
+  const serviceCards = serviceItems.map((item) => {
+    const separatorIndex = item.indexOf(':')
+
+    if (separatorIndex === -1) {
+      return {
+        title: item,
+        description: '',
+      }
+    }
+
+    return {
+      title: item.slice(0, separatorIndex).trim(),
+      description: item.slice(separatorIndex + 1).trim(),
+    }
+  })
 
   return (
     <AnimatedSection id="innovation-lab" className="wf-band-dark wf-innovation-labs">
@@ -33,15 +48,6 @@ export default function InnovationLabs() {
             <FadeUp>
               <p className="wf-prose-light">{introText}</p>
             </FadeUp>
-            <FadeUp index={1}>
-              <ul className="wf-prose-light wf-innovation-list">
-                {serviceItems.map((item, index) => (
-                  <li key={index} className="wf-innovation-list-item">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </FadeUp>
           </div>
         </div>
 
@@ -58,6 +64,21 @@ export default function InnovationLabs() {
                 </span>
                 <h3 className="wf-card-heading wf-card-heading-dark">{area.title}</h3>
                 <p className="wf-card-body wf-card-body-dark">{area.description}</p>
+              </motion.div>
+            </StaggerItem>
+          ))}
+        </StaggerParent>
+
+        <StaggerParent className="row g-4 mt-4">
+          {serviceCards.map((card, index) => (
+            <StaggerItem key={`${card.title}-service`} index={index} className="col-md-6 col-xl-3">
+              <motion.div
+                className="wf-card-minimal wf-card-minimal-dark wf-innovation-service-card"
+                whileHover={{ y: -5, scale: 1.02 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+              >
+                <h3 className="wf-card-heading wf-card-heading-dark wf-innovation-service-title">{card.title}</h3>
+                <p className="wf-card-body wf-card-body-dark wf-innovation-service-body">{card.description}</p>
               </motion.div>
             </StaggerItem>
           ))}

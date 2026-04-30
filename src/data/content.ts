@@ -46,6 +46,11 @@ export interface Office {
   lines: string[];
 }
 
+export interface FaqItem {
+  question: string;
+  answer: string[];
+}
+
 /* ── Hero ────────────────────────────────────────────────── */
 
 export const heroContent = {
@@ -161,7 +166,7 @@ export const globalHealthInnovationAreas: ThesisArea[] = [
 
 export const innovationLabsIntro = {
   body: [
-    "The innovation lab offers services ranging from:",
+    "Africa's youthful population median age 18 holds immense potential to design new healthcare solutions fit for the market. Yet startups consistently fall through the gap between early incubation and later-stage funding. In parallel, healthcare SMEs face working capital and growth equity shortages to scale and grow their businesses. Jaza Rift fills those gaps. In partnership with leading thought stakeholders, we've built a seamless pipeline: from research to commercialisation, idea to market, and scale in multiple countries, no other organisation in Africa offers this end-to-end continuity for healthcare investments as a platform to scale across Africa.",
     "Ideation as a Service: human centered design frameworks to test and validate new healthcare or accessibility business ideas with rapid prototyping innovation workshops.",
     "Design as a Service: an internal or outsourced design team whenever you need it for all your UX/UI, brand identity and pitch deck designs.",
     "Capital raising as a Service: Fundraising strategy, process, and workshop to help you secure early-stage investments and grant funding for your startup.",
@@ -389,6 +394,60 @@ export const insights: InsightCard[] = [
     title: "Building the Deep Sector Expertise Network",
     description:
       "From oncology to radiology, Jaza Rift is assembling a gender-balanced network of investment and healthcare advisors across the full value chain.",
+  },
+];
+
+/* ── Questions ───────────────────────────────────────────── */
+
+export const faqItems: FaqItem[] = [
+  {
+    question: "What is your investment thesis?",
+    answer: [
+      "We scout and select founding teams using engineering innovations and operational innovations to solve large and meaningful healthcare challenges across Africa.",
+      "We back African technology and technology-enabled companies that are creating a continuum of care from physical to digital to mobile health, thereby redefining the way Africans benefit from affordable, accessible and quality healthcare.",
+      "Our core thesis is driven by identifying healthcare verticals in Africa where the challenges are large and meaningful, which can be solved commercially, where technology and operational innovation is core and achieve depth, breadth and scale of impact.",
+      "We know the healthcare market is both underfunded, fragmented and mostly out of pockets, but with tailwinds of youth population growth, increasing internet penetration and falling data costs, rapidly developing digital and physical infrastructure, improved governance and transparency, and an emerging tech and venture ecosystem supporting healthcare, we observe substantial opportunity in backing the founding teams leveraging technology and local knowledge to build the rails that will support better healthcare in a context of Africa's exponential growth over the coming decades.",
+    ],
+  },
+  {
+    question: "At what stage do you invest?",
+    answer: [
+      "We are a multi-stage investment holding firm. We partner with you and invest from pre-seed through to Series A on our first venture check. With our Transaction Advisory arm, we support debt and grant investments for scale and growth ($3M+). For pre-seed investments, we typically invest in founders with engineering or STEM background, usually with complete founding teams, with the view to continue investing over the company’s growth stages.",
+      "In addition to our investment holding entity, we also partner with large pharma corporates for potential exit routes and can support, via our Transaction Advisory, investments from $10M per company over longer holding periods.",
+    ],
+  },
+  {
+    question: "What are your key investment sectors?",
+    answer: [
+      "We source, select and nurture African technology and tech-enabled companies in the digital health, medtech, biotech and assistive technology space across Africa, especially Kenya, Nigeria, Egypt, South Africa, Ghana, Cote d’Ivoire, Ethiopia. Jaza Rift can lead or co-lead investments transactions in the space.",
+    ],
+  },
+  {
+    question: "What is your ticket size?",
+    answer: [
+      "Our first check ranges from $50k to $500k, with our sweet spot between $200k - $2m USD. We are building capacity to follow on from our core funds and through our transaction advisory partners, who can invest from $10m per company.",
+    ],
+  },
+  {
+    question: "Do you follow on after your initial investment?",
+    answer: [
+      "We have a reserve policy and follow-on strategy where we reserve significant capital to follow on into portfolio companies we've already backed. Not every company will receive a follow-on investment.",
+      "From our holding company, we made investments into 9 companies. We also have a dedicated Transaction Advisory arm that can facilitate $10m+ per company to support growth and scale.",
+    ],
+  },
+  {
+    question: "Do you lead investments?",
+    answer: [
+      "We can lead, co-lead and just participate in investments where it also fits the needs of the company.",
+      "We invest only if we have strong conviction in the 3Ts (Team, Taste and Terms), and where we can add value to this stage of your business via the 4Cs (Capital, Coaching, Community, Crazy 10x growth). We take Board and Observer seats depending on a case by case basis.",
+    ],
+  },
+  {
+    question: "How long is your investment process?",
+    answer: [
+      "Our investment process is very dependent on variables specific to you and the investment (see our 3Ts). On average our process from first call to cash in the bank for an equity investment is approximately 4 months. However this timeline hinges on the structure and nuances of the transaction, the responsiveness to requests, the quality of information provided, and the quality of lawyers supporting all parties.",
+      "Our fastest investment from start to finish has been in 2-weeks, however this is more of an exception rather than a rule. This is one of the reasons we advise companies to start building relationships and sharing information consistently before you need to fundraise, as it will typically shorten the length of the investment process.",
+    ],
   },
 ];
 

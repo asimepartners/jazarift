@@ -94,7 +94,9 @@ export default function Footer() {
           <div className="container">
             <div className="wf-ft-bar-inner">
               <span className="wf-ft-copy">© {new Date().getFullYear()} Jaza Rift Ventures. All rights reserved.</span>
-             
+              <div className="wf-ft-legal">
+                <a href="/privacy.html" target="_blank" rel="noreferrer" className="wf-ft-legal-link">Privacy</a>
+              </div>
             </div>
           </div>
         </div>

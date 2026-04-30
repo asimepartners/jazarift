@@ -13,10 +13,11 @@ const thesisIcons: IconSvgElement[] = [
 ]
 
 export default function Thesis() {
-  const introParagraphs = thesisIntro.body.filter((item) => !item.startsWith('>'))
-  const criteriaItems = thesisIntro.body
-    .filter((item) => item.startsWith('>'))
-    .map((item) => item.replace(/^>\s*/, ''))
+  const criteriaPrefixes = ['Sector:', 'Stage:', 'Tickets:', 'Countries:']
+  const introParagraphs = thesisIntro.body.filter(
+    (item) => !criteriaPrefixes.some((prefix) => item.startsWith(prefix)),
+  )
+  const criteriaItems = thesisIntro.body.filter((item) => criteriaPrefixes.some((prefix) => item.startsWith(prefix)))
 
   return (
     <AnimatedSection id="thesis" className="wf-section">
@@ -40,15 +41,17 @@ export default function Thesis() {
                 <p className="wf-prose">{para}</p>
               </FadeUp>
             ))}
-            <FadeUp index={introParagraphs.length}>
-              <ul className="wf-prose wf-thesis-list">
-                {criteriaItems.map((item, index) => (
-                  <li key={index} className="wf-thesis-list-item">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </FadeUp>
+            {criteriaItems.length > 0 ? (
+              <FadeUp index={introParagraphs.length}>
+                <ul className="wf-prose wf-thesis-list">
+                  {criteriaItems.map((item, index) => (
+                    <li key={index} className="wf-thesis-list-item">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </FadeUp>
+            ) : null}
           </div>
         </div>
 
@@ -71,7 +74,17 @@ export default function Thesis() {
           ))}
         </StaggerParent>
 
-        <Framework embedded />
+        <div className="wf-thesis-framework-block">
+          <FadeUp>
+            <h2 className="wf-display wf-thesis-framework-title">How We Invest</h2>
+          </FadeUp>
+          <FadeUp index={1}>
+            <p className="wf-prose wf-thesis-framework-copy">
+              We evaluate all investments through our 3Ts framework a rigorous but founder-friendly approach powered by our 4Cs.
+            </p>
+          </FadeUp>
+          <Framework embedded />
+        </div>
       </div>
     </AnimatedSection>
   )
