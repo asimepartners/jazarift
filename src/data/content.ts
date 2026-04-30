@@ -58,7 +58,7 @@ export const heroContent = {
   subheadline:
     "Investments | Transaction Advisory | Global Health Innovation Lab",
   ctaPrimary: { label: "Submit Your Proposal", href: "http://tinyurl.com/jazarift", target: "_blank" },
-  ctaSecondary: { label: "Portfolio", href: "#portfolio" },
+  ctaSecondary: { label: "Our Portfolio", href: "#portfolio" },
 };
 
 export const heroStats = [
@@ -66,6 +66,7 @@ export const heroStats = [
   { value: "4", label: "Sectors" },
   { value: "2", label: "Offices" },
   { value: "3", label: "Health Nexus" },
+  { value: "10+", label: "Advisory Transactions" },
 ];
 
 /* ── Investment Thesis ───────────────────────────────────── */

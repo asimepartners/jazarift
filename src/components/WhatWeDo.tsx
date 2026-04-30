@@ -25,7 +25,7 @@ const pillars = [
     title: 'Innovation Lab',
     body: 'A pan-African healthcare innovation team partnering with Global Health actors to drive innovations across the healthcare spectrum in Africa. We implement healthcare focused innovation programs, offer Corporate VC-as-a-Service and run hackathons, ideation labs, and human-centered design programs.',
     icon: TestTube01Icon,
-    href: '#thesis',
+    href: '#innovation-lab',
   },
 ]
 
@@ -52,7 +52,9 @@ export default function WhatWeDo() {
           <div className="col-lg-5 offset-lg-2 mt-4 mt-lg-0 d-flex align-items-end">
             <BlurIn>
               <p className="wf-prose">
-                Jaza Rift operates at the intersection of capital, advisory expertise, and disruptive innovation creating an integrated ecosystem for healthcare impact across Africa. Vision: We envision a future where healthcare in Africa is a cornerstone of economic prosperity. Aligned to SDG3, our vision is anchored in the belief that through strategic investments, sector-focused value creation, and corporate partnerships, we can create sustainable impact, and achieve a state where healthcare is affordable, accessible and of quality for all. Mission: catalyze positive change in healthcare in Africa through targeted investments, a network of advisors  and coaches and a comprehensive scaling methodology for digital health, medtech, and biotech innovations and inventions. 
+                Jaza Rift operates at the intersection of capital, advisory expertise, and disruptive innovation creating an integrated ecosystem for healthcare impact across Africa. 
+                Vision: We envision a future where healthcare in Africa is a cornerstone of economic prosperity. Aligned to SDG3, our vision is anchored in the belief that through strategic investments, sector-focused value creation, and corporate partnerships, we can create sustainable impact, and achieve a state where healthcare is affordable, accessible and of quality for all. 
+                Mission: catalyze positive change in healthcare in Africa through targeted investments, a network of advisors  and coaches and a comprehensive scaling methodology for digital health, medtech, and biotech innovations and inventions. 
               </p>
             </BlurIn>
           </div>
