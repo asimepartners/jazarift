@@ -46,7 +46,7 @@ export default function Navbar() {
             <ul className="navbar-nav ms-auto me-lg-4 gap-lg-1">
               {[
                 { label: 'WHAT WE DO', href: '#ventures' },
-                { label: 'VENTURES', href: '#thesis' },
+                { label: 'INVESTMENTS', href: '#thesis' },
                 { label: 'ADVISORY', href: '#framework' },
                 { label: 'INNOVATION LAB', href: '#innovation-lab' },
                 { label: 'PORTFOLIO', href: '#portfolio' },
@@ -72,6 +72,16 @@ export default function Navbar() {
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
             >
               APPLY
+              <HugeiconsIcon icon={ArrowUpRight01Icon} size={14} strokeWidth={2.5} className="ms-2" />
+            </motion.a>
+            <motion.a
+              className="btn wf-btn-nav"
+              href="http://tinyurl.com/investinjaza" target="_blank"
+              whileHover={{ scale: 1.04, y: -1 }}
+              whileTap={{ scale: 0.96 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+            >
+              INVEST WITH US
               <HugeiconsIcon icon={ArrowUpRight01Icon} size={14} strokeWidth={2.5} className="ms-2" />
             </motion.a>
           </div>

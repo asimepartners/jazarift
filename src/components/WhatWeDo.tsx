@@ -6,10 +6,10 @@ const pillars = [
   {
     number: '01',
     label: 'Ventures',
-    title: 'Jaza Rift Ventures',
+    title: 'Jaza Rift',
     body: 'An investment holding company solely focused on healthcare in Africa. We support reslient founders and entrepreneurs from pre-Seed to Series A with targeted capital and hands-on support in digital health, medtech, biotech and assistive technologies.',
     icon: ChartIncreaseIcon,
-    href: '#portfolio',
+    href: '#thesis',
   },
   {
     number: '02',
