@@ -351,9 +351,9 @@ a { text-decoration: none; color: inherit; }
 .wf-announce-modal {
   position: relative;
   z-index: 1;
-  width: min(92vw, 780px);
-  max-width: 780px;
-  max-height: 90vh;
+  width: min(92vw, 680px);
+  max-width: 680px;
+  max-height: 88vh;
   overflow-x: hidden;
   overflow-y: auto;
   border-radius: 24px;
