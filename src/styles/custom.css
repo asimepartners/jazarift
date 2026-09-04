@@ -413,10 +413,10 @@ a { text-decoration: none; color: inherit; }
 .wf-announce-media img {
   width: 100%;
   height: auto;
-  max-height: min(38vh, 360px);
   display: block;
-  object-fit: cover;
-  object-position: center;
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
 }
 
 .wf-announce-body {
