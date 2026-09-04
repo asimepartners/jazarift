@@ -1390,6 +1390,20 @@ a { text-decoration: none; color: inherit; }
   max-height: 84px;
 }
 
+.wf-portfolio-logo--afiyah {
+  max-width: 220px;
+  max-height: 64px;
+  border-radius: 8px;
+}
+
+.wf-portfolio-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
 .wf-portfolio-cat-badge {
   display: inline-block;
   font-size: 0.68rem;
@@ -1400,7 +1414,21 @@ a { text-decoration: none; color: inherit; }
   border-radius: var(--radius-full);
   background: rgba(36,87,214,0.06);
   color: var(--jz-blue);
-  margin-bottom: 1.2rem;
+  margin-bottom: 0;
+}
+
+.wf-portfolio-exited-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: #e11d48;
+  color: #fff;
 }
 
 .wf-portfolio-name {

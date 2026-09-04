@@ -1,10 +1,10 @@
 import { HugeiconsIcon } from '@hugeicons/react'
-import { ArrowUpRight01Icon } from '@hugeicons/core-free-icons'
+import { ArrowUpRight01Icon, Rocket01Icon } from '@hugeicons/core-free-icons'
 import { portfolio } from '@/data/content'
 import { AnimatedSection, FadeUp, StaggerParent, StaggerItem, motion } from './Motion'
 
 const portfolioLogos: Record<string, string> = {
-  Tanel: '/logos/logo-tanel-400-x-250-px-1.png',
+  Tanel: '/logos/afiyah-by-alan.png',
   'Revna Biosciences': '/logos/revnabiosciences_logo.jpeg',
   Figorr: '/logos/Figorr.jpeg',
   'Plural Health': '/logos/plural_health_logo.jpeg',
@@ -24,6 +24,56 @@ const portfolioLinks: Partial<Record<string, string>> = {
   Tanel: 'https://www.tanelhealth.com/en/',
   'Plural Health': 'https://plural.health/',
   TPN: 'https://pathologynetwork.com/',
+}
+
+const exitedCompanies = new Set(['Tanel'])
+
+function PortfolioCardContent({
+  name,
+  category,
+  description,
+}: {
+  name: string
+  category: string
+  description: string
+}) {
+  const logoClass =
+    name === 'Revna Biosciences'
+      ? 'wf-portfolio-logo wf-portfolio-logo--revna'
+      : name === 'Tanel'
+        ? 'wf-portfolio-logo wf-portfolio-logo--afiyah'
+        : 'wf-portfolio-logo'
+
+  return (
+    <>
+      {portfolioLogos[name] ? (
+        <div className="wf-portfolio-logo-wrap">
+          <img
+            src={portfolioLogos[name]}
+            alt={`${name} logo`}
+            className={logoClass}
+            loading="lazy"
+          />
+        </div>
+      ) : null}
+
+      <div className="wf-portfolio-badges">
+        <div className="wf-portfolio-cat-badge">{category}</div>
+        {exitedCompanies.has(name) ? (
+          <span className="wf-portfolio-exited-badge">
+            <HugeiconsIcon icon={Rocket01Icon} size={13} strokeWidth={2.2} />
+            Exited
+          </span>
+        ) : null}
+      </div>
+
+      <h3 className="wf-portfolio-name">{name}</h3>
+      <p className="wf-card-body">{description}</p>
+      <div className="wf-portfolio-arrow">
+        <HugeiconsIcon icon={ArrowUpRight01Icon} size={20} strokeWidth={2} />
+      </div>
+    </>
+  )
 }
 
 export default function Portfolio() {
@@ -56,22 +106,11 @@ export default function Portfolio() {
                   transition={{ type: 'spring', stiffness: 300, damping: 22 }}
                 >
                   <div className="wf-portfolio-card wf-portfolio-card-clickable">
-                    {portfolioLogos[co.name] ? (
-                      <div className="wf-portfolio-logo-wrap">
-                        <img
-                          src={portfolioLogos[co.name]}
-                          alt={`${co.name} logo`}
-                          className={`wf-portfolio-logo${co.name === 'Revna Biosciences' ? ' wf-portfolio-logo--revna' : ''}`}
-                          loading="lazy"
-                        />
-                      </div>
-                    ) : null}
-                    <div className="wf-portfolio-cat-badge">{co.category}</div>
-                    <h3 className="wf-portfolio-name">{co.name}</h3>
-                    <p className="wf-card-body">{co.description}</p>
-                    <div className="wf-portfolio-arrow">
-                      <HugeiconsIcon icon={ArrowUpRight01Icon} size={20} strokeWidth={2} />
-                    </div>
+                    <PortfolioCardContent
+                      name={co.name}
+                      category={co.category}
+                      description={co.description}
+                    />
                   </div>
                 </motion.a>
               ) : (
@@ -80,22 +119,11 @@ export default function Portfolio() {
                   whileHover={{ y: -6, scale: 1.02 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 22 }}
                 >
-                  {portfolioLogos[co.name] ? (
-                    <div className="wf-portfolio-logo-wrap">
-                      <img
-                        src={portfolioLogos[co.name]}
-                        alt={`${co.name} logo`}
-                        className={`wf-portfolio-logo${co.name === 'Revna Biosciences' ? ' wf-portfolio-logo--revna' : ''}`}
-                        loading="lazy"
-                      />
-                    </div>
-                  ) : null}
-                  <div className="wf-portfolio-cat-badge">{co.category}</div>
-                  <h3 className="wf-portfolio-name">{co.name}</h3>
-                  <p className="wf-card-body">{co.description}</p>
-                  <div className="wf-portfolio-arrow">
-                    <HugeiconsIcon icon={ArrowUpRight01Icon} size={20} strokeWidth={2} />
-                  </div>
+                  <PortfolioCardContent
+                    name={co.name}
+                    category={co.category}
+                    description={co.description}
+                  />
                 </motion.div>
               )}
             </StaggerItem>
@@ -105,4 +133,3 @@ export default function Portfolio() {
     </AnimatedSection>
   )
 }
-
