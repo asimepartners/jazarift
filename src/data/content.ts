@@ -224,7 +224,7 @@ export const conveyorSteps: ConveyorStep[] = [
 export const portfolio: PortfolioCompany[] = [
   {
     category: "Digital Health",
-    name: "Tanel",
+    name: "Tanel - acquired by Alan",
     description:
       "B2B insuretech platform for companies and their employees with a digital claim management tool for healthcare providers.",
   },

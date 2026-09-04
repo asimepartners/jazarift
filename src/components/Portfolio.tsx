@@ -4,7 +4,7 @@ import { portfolio } from '@/data/content'
 import { AnimatedSection, FadeUp, StaggerParent, StaggerItem, motion } from './Motion'
 
 const portfolioLogos: Record<string, string> = {
-  Tanel: '/logos/afiyah-by-alan.png',
+  'Tanel - acquired by Alan': '/logos/afiyah-by-alan.png',
   'Revna Biosciences': '/logos/revnabiosciences_logo.jpeg',
   Figorr: '/logos/Figorr.jpeg',
   'Plural Health': '/logos/plural_health_logo.jpeg',
@@ -21,12 +21,12 @@ const portfolioLinks: Partial<Record<string, string>> = {
   Figorr: 'https://enterprise.figorr.com/',
   Neopenda: 'https://www.neopenda.com/',
   'Yene Health': 'https://yenehealth.com/',
-  Tanel: 'https://www.tanelhealth.com/en/',
+  'Tanel - acquired by Alan': 'https://www.tanelhealth.com/en/',
   'Plural Health': 'https://plural.health/',
   TPN: 'https://pathologynetwork.com/',
 }
 
-const exitedCompanies = new Set(['Tanel'])
+const exitedCompanies = new Set(['Tanel - acquired by Alan'])
 
 function PortfolioCardContent({
   name,
@@ -40,7 +40,7 @@ function PortfolioCardContent({
   const logoClass =
     name === 'Revna Biosciences'
       ? 'wf-portfolio-logo wf-portfolio-logo--revna'
-      : name === 'Tanel'
+      : name === 'Tanel - acquired by Alan'
         ? 'wf-portfolio-logo wf-portfolio-logo--afiyah'
         : 'wf-portfolio-logo'
 
