@@ -2,6 +2,12 @@ import { HugeiconsIcon } from '@hugeicons/react'
 import { ArrowUpRight01Icon } from '@hugeicons/core-free-icons'
 import { useScroll, useTransform, useSpring, motion, springSnappy } from './Motion'
 
+const ANNOUNCEMENT_URL =
+  'https://techlabari.com/european-insurer-alan-makes-first-african-bet-buying-senegals-tanel/'
+
+const ANNOUNCEMENT_TITLE =
+  'European Insurer Alan Makes First African Bet, Buying Senegal’s Tanel'
+
 export default function Navbar() {
   const { scrollY } = useScroll()
   const rawOpacity = useTransform(scrollY, [0, 80], [0, 0.96])
@@ -11,11 +17,26 @@ export default function Navbar() {
 
   return (
     <motion.header
+      className="wf-header"
       initial={{ y: -72, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={springSnappy}
     >
-      <nav className="navbar navbar-expand-lg fixed-top wf-nav" style={{ position: 'fixed' }}>
+      <a
+        className="wf-announce-banner"
+        href={ANNOUNCEMENT_URL}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span className="wf-announce-banner-label">News</span>
+        <span className="wf-announce-banner-text">{ANNOUNCEMENT_TITLE}</span>
+        <span className="wf-announce-banner-cta">
+          Read more
+          <HugeiconsIcon icon={ArrowUpRight01Icon} size={13} strokeWidth={2.5} />
+        </span>
+      </a>
+
+      <nav className="navbar navbar-expand-lg wf-nav">
         {/* Scroll-reactive glass backdrop */}
         <motion.div
           aria-hidden="true"
@@ -64,26 +85,28 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            <motion.a
-              className="btn wf-btn-nav"
-              href="http://tinyurl.com/jazarift" target="_blank"
-              whileHover={{ scale: 1.04, y: -1 }}
-              whileTap={{ scale: 0.96 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-            >
-              APPLY
-              <HugeiconsIcon icon={ArrowUpRight01Icon} size={14} strokeWidth={2.5} className="ms-2" />
-            </motion.a>
-            <motion.a
-              className="btn wf-btn-nav"
-              href="http://tinyurl.com/investinjaza" target="_blank"
-              whileHover={{ scale: 1.04, y: -1 }}
-              whileTap={{ scale: 0.96 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-            >
-              INVEST
-              <HugeiconsIcon icon={ArrowUpRight01Icon} size={14} strokeWidth={2.5} className="ms-2" />
-            </motion.a>
+            <div className="wf-nav-actions">
+              <motion.a
+                className="btn wf-btn-nav"
+                href="http://tinyurl.com/jazarift" target="_blank"
+                whileHover={{ scale: 1.04, y: -1 }}
+                whileTap={{ scale: 0.96 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+              >
+                APPLY
+                <HugeiconsIcon icon={ArrowUpRight01Icon} size={14} strokeWidth={2.5} className="ms-2" />
+              </motion.a>
+              <motion.a
+                className="btn wf-btn-nav"
+                href="http://tinyurl.com/investinjaza" target="_blank"
+                whileHover={{ scale: 1.04, y: -1 }}
+                whileTap={{ scale: 0.96 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+              >
+                INVEST
+                <HugeiconsIcon icon={ArrowUpRight01Icon} size={14} strokeWidth={2.5} className="ms-2" />
+              </motion.a>
+            </div>
           </div>
         </div>
       </nav>
