@@ -57,7 +57,7 @@ export default function AnnouncementModal() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="wf-announce-title"
-        style={{ width: 'min(94vw, 920px)' }}
+        style={{ width: 'min(92vw, 780px)', maxHeight: '90vh' }}
         initial={{ opacity: 0, y: 28, scale: 0.96 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={springGentle}

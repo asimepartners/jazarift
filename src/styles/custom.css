@@ -334,7 +334,7 @@ a { text-decoration: none; color: inherit; }
   z-index: 1200;
   display: grid;
   place-items: center;
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 .wf-announce-backdrop {
@@ -351,23 +351,25 @@ a { text-decoration: none; color: inherit; }
 .wf-announce-modal {
   position: relative;
   z-index: 1;
-  width: min(94vw, 920px);
-  max-width: 920px;
-  overflow: hidden;
-  border-radius: 28px;
+  width: min(92vw, 780px);
+  max-width: 780px;
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 24px;
   background: var(--jz-white);
   box-shadow: 0 32px 80px rgba(0, 0, 0, 0.28);
 }
 
 .wf-announce-close {
   position: absolute;
-  top: 0.85rem;
-  right: 0.85rem;
+  top: 0.75rem;
+  right: 0.75rem;
   z-index: 2;
   display: grid;
   place-items: center;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.25rem;
+  height: 2.25rem;
   border: 0;
   border-radius: 999px;
   background: rgba(15, 20, 25, 0.08);
@@ -386,7 +388,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .wf-announce-header {
-  padding: 1.6rem 3.5rem 1.35rem 2.5rem;
+  padding: 1.35rem 3.25rem 1.15rem 1.75rem;
   border-bottom: 1px solid var(--jz-border);
   background: var(--jz-white);
 }
@@ -394,9 +396,9 @@ a { text-decoration: none; color: inherit; }
 .wf-announce-header-text {
   margin: 0;
   font-family: var(--font-title);
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.3;
   letter-spacing: -0.02em;
   color: var(--jz-dark);
 }
@@ -411,19 +413,20 @@ a { text-decoration: none; color: inherit; }
 .wf-announce-media img {
   width: 100%;
   height: auto;
+  max-height: min(38vh, 360px);
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
 .wf-announce-body {
-  padding: 2rem 2.5rem 2.4rem;
+  padding: 1.35rem 1.75rem 1.6rem;
 }
 
 .wf-announce-eyebrow {
   display: inline-block;
-  margin-bottom: 0.75rem;
-  font-size: 0.78rem;
+  margin-bottom: 0.55rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -431,11 +434,11 @@ a { text-decoration: none; color: inherit; }
 }
 
 .wf-announce-title {
-  margin: 0 0 1.4rem;
+  margin: 0 0 1rem;
   font-family: var(--font-title);
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.3;
   letter-spacing: -0.02em;
   color: var(--jz-dark);
 }
@@ -2148,20 +2151,21 @@ a { text-decoration: none; color: inherit; }
   }
 
   .wf-announce-overlay {
-    padding: 0.9rem;
-    align-items: end;
+    padding: 0.75rem;
+    align-items: center;
   }
 
   .wf-announce-modal {
-    border-radius: 20px;
+    border-radius: 18px;
+    max-height: 92vh;
   }
 
   .wf-announce-header {
-    padding: 1.25rem 3rem 1.1rem 1.15rem;
+    padding: 1.1rem 2.75rem 1rem 1.1rem;
   }
 
   .wf-announce-body {
-    padding: 1.15rem 1.15rem 1.35rem;
+    padding: 1.1rem 1.1rem 1.25rem;
   }
 
   .wf-announce-banner {
